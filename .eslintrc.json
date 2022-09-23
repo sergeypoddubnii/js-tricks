@@ -1,0 +1,62 @@
+{
+	"env": {
+		"browser": true,
+		"es2021": true
+	},
+	"extends": [
+		"plugin:react/recommended",
+		"plugin:@typescript-eslint/recommended"
+	],
+	"parser": "@typescript-eslint/parser",
+	"parserOptions": {
+		"warnOnUnsupportedTypeScriptVersion": false,
+		"ecmaFeatures": {
+			"jsx": true
+		},
+		"ecmaVersion": "latest",
+		"sourceType": "module"
+	},
+	"plugins": [
+		"react",
+		"@typescript-eslint",
+		"filenames"
+	],
+	"globals": {
+		"NodeJS": true
+	},
+	"rules": {
+		"quotes": ["error", "single"],
+		"semi": ["error", "always"],
+		"no-undef": "error",
+		"@typescript-eslint/naming-convention": [
+			"error",
+			{
+				"selector": "function",
+				"format": ["camelCase", "PascalCase"]
+			},
+			{
+				"selector": ["class", "interface", "typeAlias", "enum"],
+				"format": ["PascalCase"]
+			}
+		],
+  	"filenames/match-exported": [2, [ null, "camel", "pascal" ] ],
+  	"@typescript-eslint/no-explicit-any": "error",
+	"react/prop-types": "off",
+	"@typescript-eslint/explicit-module-boundary-types": "off",
+	"no-unused-vars": ["error", { "vars": "all", "args": "none", "ignoreRestSiblings": false }],
+	"@typescript-eslint/no-unused-vars": [
+		2,
+		{"args": "none"}
+	],
+	"no-multiple-empty-lines": ["error", { "max": 1 }],
+	"no-console": "error",
+	"no-debugger": "error",
+	"indent": ["error", "tab"],
+	"space-in-parens": ["error", "never"]
+	},
+	"settings": {
+    "react": {
+      "version": "detect"
+    }
+  }
+}
