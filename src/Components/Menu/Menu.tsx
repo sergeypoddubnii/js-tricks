@@ -1,16 +1,14 @@
 import React from 'react';
-import {Link} from 'react-router-dom';
+import styles from './styles.module.scss';
 
 const Menu = () => {
 	return (
-		<aside className="main-sidebar sidebar-dark-primary elevation-4">
-			<div className="sidebar">
-				<nav className="mt-2">
-					<ul className="nav nav-pills nav-sidebar flex-column">
-						<li className="nav-item">
-							<Link className='nav-link' to={''}>
-								<p>React patterns</p>
-							</Link>
+		<aside>
+			<div className={styles.menu}>
+				<nav>
+					<ul>
+						<li>
+							React
 						</li>
 					</ul>
 				</nav>

@@ -1,0 +1,11 @@
+@import '/src/assets/variables';
+
+.menu {
+	width: 250px;
+	height: 100vh;
+	background-color: $dark-grey;
+
+	&__item {
+		color: white;
+	}
+}
