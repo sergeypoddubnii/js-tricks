@@ -1,8 +1,12 @@
 @import '/src/assets/variables';
 
 .menu {
-	width: 250px;
+	width: 200px;
 	height: 100vh;
+	padding: 10px 5px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 	background-color: $dark-grey;
 
 	&__item {
