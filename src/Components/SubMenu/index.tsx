@@ -1,7 +1,17 @@
-import React from 'react';
+import React, {FC} from 'react';
 
-const SubMenu = () => {
-	return (<></>);
+interface IProps {
+	title: string;
+}
+
+const SubMenu: FC<IProps> = ({title}:IProps) => {
+	return (
+		<>
+			<button type='button'>
+				{title}
+			</button>
+		</>
+	);
 };
 
 export default SubMenu;
