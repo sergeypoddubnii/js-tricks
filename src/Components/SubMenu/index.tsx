@@ -2,12 +2,16 @@ import React, {FC} from 'react';
 
 interface IProps {
 	title: string;
+	onClick: () => void;
 }
 
-const SubMenu: FC<IProps> = ({title}:IProps) => {
+const SubMenu: FC<IProps> = ({title, onClick}:IProps) => {
 	return (
 		<>
-			<button type='button'>
+			<button
+				type='button'
+				onClick={onClick}
+			>
 				{title}
 			</button>
 		</>
