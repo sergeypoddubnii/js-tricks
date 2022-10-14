@@ -6,7 +6,7 @@ const Menu = () => {
 	return (
 		<nav>
 			<ul className={styles.menu}>
-				<MenuLink text='React Patterns' to={''}/>
+				<MenuLink text='React Patterns' to={'/'}/>
 			</ul>
 		</nav>
 	);
