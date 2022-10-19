@@ -7,6 +7,7 @@ const Menu = () => {
 		<nav>
 			<ul className={styles.menu}>
 				<MenuLink text='React Patterns' to={'/'}/>
+				<MenuLink text='DevTools' to={'/'}/>
 			</ul>
 		</nav>
 	);
