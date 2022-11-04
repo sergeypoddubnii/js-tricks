@@ -10,6 +10,7 @@ const Menu = () => {
 				<MenuLink text='DevTools' to={'/'}/>
 				<MenuLink text='Design Pattens' to={'/'}/>
 				<MenuLink text='Books' to={'/'}/>
+				<MenuLink text='MV Pattens' to={'/'}/>
 			</ul>
 		</nav>
 	);
