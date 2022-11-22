@@ -1,6 +1,6 @@
 @import '/src/assets/variables';
 
-.menu {
+.nav {
 	width: 200px;
 	height: 100vh;
 	padding: 10px 5px;
@@ -8,8 +8,4 @@
 	flex-direction: column;
 	align-items: center;
 	background-color: $dark-grey;
-
-	&__item {
-		color: white;
-	}
 }

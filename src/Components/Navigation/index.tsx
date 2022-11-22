@@ -1,11 +1,11 @@
 import React from 'react';
-import MenuLink from './MenuLink';
+import MenuLink from './NavigationLink';
 import './styles.scss';
 
-const Menu = () => {
+const Index = () => {
 	return (
 		<nav>
-			<ul className='menu'>
+			<ul className='nav'>
 				<MenuLink text='React Patterns' to={'/'}/>
 				<MenuLink text='DevTools' to={'/'}/>
 				<MenuLink text='Design Pattens' to={'/'}/>
@@ -16,4 +16,4 @@ const Menu = () => {
 	);
 };
 
-export default Menu;
+export default Index;

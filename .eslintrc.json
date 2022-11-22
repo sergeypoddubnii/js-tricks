@@ -39,7 +39,6 @@
 				"format": ["PascalCase"]
 			}
 		],
-  	"filenames/match-exported": [2, [ null, "camel", "pascal" ] ],
   	"@typescript-eslint/no-explicit-any": "error",
 	"react/prop-types": "off",
 	"@typescript-eslint/explicit-module-boundary-types": "off",
