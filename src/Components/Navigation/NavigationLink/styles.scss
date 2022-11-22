@@ -2,8 +2,12 @@
 
 .item {
 	width: 100%;
+
+	&:hover{
+		color: $dark-grey;
+	}
 }
 
-.link{
+.link {
 	color: white;
 }
