@@ -2,7 +2,7 @@ import React from 'react';
 import MenuLink from './NavigationLink';
 import './styles.scss';
 
-const Index = () => {
+const Navigation = () => {
 	return (
 		<nav>
 			<ul className='nav'>
@@ -16,4 +16,4 @@ const Index = () => {
 	);
 };
 
-export default Index;
+export default Navigation;

@@ -1,19 +1,27 @@
-import React, {FC} from 'react';
+import React, {FC, ReactNode, useState} from 'react';
 
 interface IProps {
 	title: string;
 	onClick: () => void;
+	children: ReactNode;
 }
 
-const SubMenu: FC<IProps> = ({title, onClick}:IProps) => {
+const SubMenu: FC<IProps> = ({title, children}:IProps) => {
+	const [isOpen, setIsOpen] = useState(false);
+
+	const handleToggleOpen = () => {
+		setIsOpen((prev) => !prev);
+	};
+
 	return (
 		<>
 			<button
 				type='button'
-				onClick={onClick}
+				onClick={handleToggleOpen}
 			>
 				{title}
 			</button>
+			{isOpen && children}
 		</>
 	);
 };
