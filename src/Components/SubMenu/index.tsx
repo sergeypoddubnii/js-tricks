@@ -1,17 +1,25 @@
-import React, {FC, ReactNode, useState} from 'react';
+import React, {FC, useState} from 'react';
+import NavigationLink from '../Navigation/NavigationLink';
+
+interface ISubListItem {
+	route: string;
+	name: string;
+}
 
 interface IProps {
 	title: string;
 	onClick: () => void;
-	children: ReactNode;
+	subList: ISubListItem[];
 }
 
-const SubMenu: FC<IProps> = ({title, children}:IProps) => {
+const SubMenu: FC<IProps> = ({title, subList}:IProps) => {
 	const [isOpen, setIsOpen] = useState(false);
 
 	const handleToggleOpen = () => {
 		setIsOpen((prev) => !prev);
 	};
+
+	const list = subList.map((item:ISubListItem) => <NavigationLink key={item.name} text={item.name} to={item.route}/>);
 
 	return (
 		<>
@@ -21,7 +29,7 @@ const SubMenu: FC<IProps> = ({title, children}:IProps) => {
 			>
 				{title}
 			</button>
-			{isOpen && children}
+			{isOpen && list}
 		</>
 	);
 };
