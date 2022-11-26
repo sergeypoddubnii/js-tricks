@@ -3,11 +3,12 @@
 .item {
 	width: 100%;
 
-	&:hover{
+	&:hover {
 		color: black;
 	}
 }
 
 .link {
+	border-radius: 3px;
 	color: white;
 }

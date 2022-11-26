@@ -1,16 +1,26 @@
 import React from 'react';
-import MenuLink from './NavigationLink';
+import NavigationLink from './NavigationLink';
 import './styles.scss';
+import SubMenu from '../SubMenu';
 
 const Navigation = () => {
+	const reactPatterns = [{
+		route: '/',
+		name: 'Switch Event'
+	}];
+
 	return (
 		<nav>
 			<ul className='nav'>
-				<MenuLink text='React Patterns' to={'/'}/>
-				<MenuLink text='DevTools' to={'/'}/>
-				<MenuLink text='Design Pattens' to={'/'}/>
-				<MenuLink text='MV Pattens' to={'/'}/>
-				<MenuLink text='JS' to={'/'}/>
+				<NavigationLink text='React Patterns' to={'/'}/>
+				<NavigationLink text='DevTools' to={'/'}/>
+				<NavigationLink text='Design Pattens' to={'/'}/>
+				<NavigationLink text='MV Pattens' to={'/'}/>
+				<NavigationLink text='JS' to={'/'}/>
+				<SubMenu
+					title='React Patterns'
+					subList={reactPatterns}
+				/>
 			</ul>
 		</nav>
 	);
