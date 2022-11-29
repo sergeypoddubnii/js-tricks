@@ -41,7 +41,7 @@ const SubMenu: FC<IProps> = ({title, subList}:IProps) => {
 			>
 				{title}
 			</button>
-			{isOpen && list}
+			{isOpen && <ul>{list}</ul>}
 		</div>
 	);
 };
