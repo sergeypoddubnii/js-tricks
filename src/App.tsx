@@ -1,13 +1,22 @@
 import React from 'react';
 import Navigation from './Components/Navigation';
-import {BrowserRouter} from 'react-router-dom';
-import  './assets/base.scss';
+import {BrowserRouter, Routes, Route} from 'react-router-dom';
+import SwitchEvent from './Pages/react-patterns/switch-event';
+import routes from './routes';
+import './assets/base.scss';
 
 function App() {
 	return (
-		<BrowserRouter>
-			<Navigation/>
-		</BrowserRouter>
+		<>
+			<BrowserRouter>
+				<div style={{display: 'flex'}}>
+					<Navigation/>
+					<Routes>
+						<Route path={routes.REACT_PATTERNS.SWITCH_EVENT} element={<SwitchEvent/>} />
+					</Routes>
+				</div>
+			</BrowserRouter>
+		</>
 	);
 }
 
