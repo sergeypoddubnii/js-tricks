@@ -2,7 +2,7 @@ import React from 'react';
 
 const SwitchEvent = () => {
 	return <>
-		<h1>Switch Event</h1>
+		<h1>SwitchEvent</h1>
 	</>;
 };
 
