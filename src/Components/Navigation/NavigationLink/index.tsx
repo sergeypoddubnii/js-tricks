@@ -1,5 +1,5 @@
 import React, {FC} from 'react';
-import {NavLink} from 'react-router-dom';
+import {useNavigate} from 'react-router-dom';
 import './styles.scss';
 
 interface IProps {
@@ -8,11 +8,19 @@ interface IProps {
 }
 
 const NavigationLink:FC<IProps> = ({text, to}:IProps) => {
+	const navigate = useNavigate();
+
+	const redirectToPush = () => navigate(to);
+
 	return (
 		<li className='item'>
-			<NavLink to={to} className='link'>
+			<button
+				type='button'
+				className='link'
+				onClick={redirectToPush}
+			>
 				{text}
-			</NavLink>
+			</button>
 		</li>
 	);
 };
