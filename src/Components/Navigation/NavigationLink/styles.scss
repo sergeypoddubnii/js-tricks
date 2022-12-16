@@ -9,6 +9,17 @@
 }
 
 .link {
+	display: block;
+	width: 100%;
+	text-align: left;
+	padding: 10px 15px;
 	border-radius: 3px;
+	background-color: transparent;
+	border: none;
 	color: white;
+
+	&:hover {
+		background-color: white;
+		color: $dark-grey;
+	}
 }
