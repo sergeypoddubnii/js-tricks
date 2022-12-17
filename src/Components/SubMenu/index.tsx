@@ -1,6 +1,7 @@
 import React, {FC, useState} from 'react';
 import NavigationLink from '../Navigation/NavigationLink';
 import './styles.scss';
+import { RiArrowDropDownLine } from  'react-icons/ri';
 
 interface ISubListItem {
 	route: string;
@@ -40,6 +41,7 @@ const SubMenu: FC<IProps> = ({title, subList}:IProps) => {
 				onClick={handleToggleOpen}
 			>
 				{title}
+				<RiArrowDropDownLine className='subMenu__icon'/>
 			</button>
 			{isOpen && <ul>{list}</ul>}
 		</div>

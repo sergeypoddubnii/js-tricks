@@ -8,8 +8,11 @@
 	text-align: left;
 	padding: 10px 15px;
 	border-radius: 3px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
 
-	&:hover{
+	&:hover {
 		background-color: white;
 		color: $dark-grey;
 	}
@@ -17,11 +20,13 @@
 
 .subMenu {
 	width: 100%;
-	margin-left: 5px;
+
+	&__icon {
+		font-size: 18px;
+	}
 
 	&__active {
 		background-color: white;
 		color: $dark-grey;
 	}
-
 }
