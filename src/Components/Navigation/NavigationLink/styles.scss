@@ -18,6 +18,11 @@
 	border: none;
 	color: white;
 
+	&__active {
+		background-color: white;
+		color: $dark-grey;
+	}
+
 	&:hover {
 		background-color: white;
 		color: $dark-grey;
