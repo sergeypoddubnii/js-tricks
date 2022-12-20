@@ -1,8 +1,13 @@
 import React from 'react';
+import Card from '../../../Components/Card';
 
 const SwitchEvent = () => {
 	return <>
-		<h1>Switch Event</h1>
+		<Card
+			title='Switch Event'
+		>
+			<>Switch Event body</>
+		</Card>
 	</>;
 };
 

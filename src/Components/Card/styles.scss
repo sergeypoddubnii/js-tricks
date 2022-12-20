@@ -1,0 +1,26 @@
+@import 'src/assets/variables';
+
+.card {
+	width: 100%;
+	margin: 10px;
+	border: 1px solid $middle-grey;
+	border-radius: 4px;
+
+
+	&__title {
+		margin: 0;
+		padding: 0;
+	}
+
+	&__header {
+		padding: 5px;
+		background-color: $light-grey;
+		border-bottom: 1px solid $middle-grey;
+	}
+
+	&__body{
+		padding: 5px;
+	}
+
+
+}
