@@ -5,7 +5,7 @@ import SubMenu from '../SubMenu';
 
 const Navigation = () => {
 	const reactPatterns = [{
-		route: '/',
+		route: '/react-patterns-switch-event',
 		name: 'Switch Event'
 	}];
 
