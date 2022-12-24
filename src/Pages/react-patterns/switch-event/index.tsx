@@ -4,7 +4,8 @@ import Card from '../../../Components/Card';
 const SwitchEvent = () => {
 	return <>
 		<Card title='Switch Event'>
-			<p>Switch Event body</p>
+			<h3>Switch Event body</h3>
+			<p>body</p>
 		</Card>
 	</>;
 };
