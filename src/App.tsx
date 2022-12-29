@@ -2,8 +2,10 @@ import React from 'react';
 import Navigation from './Components/Navigation';
 import {BrowserRouter, Routes, Route} from 'react-router-dom';
 import SwitchEvent from './Pages/react-patterns/switch-event';
-import routes from './routes';
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import './assets/base.scss';
+import routes from './routes';
 
 function App() {
 	return (
@@ -16,6 +18,7 @@ function App() {
 					</Routes>
 				</div>
 			</BrowserRouter>
+			<ToastContainer />
 		</>
 	);
 }
