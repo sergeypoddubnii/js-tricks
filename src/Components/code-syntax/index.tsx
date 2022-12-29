@@ -10,16 +10,7 @@ interface IProps {
 
 const CodeSyntax:FC<IProps> = ({code}:IProps) => {
 
-	const handleCopyCode = () => toast.success('Copied!', {
-		position: 'bottom-center',
-		autoClose: 1500,
-		hideProgressBar: true,
-		closeOnClick: true,
-		pauseOnHover: true,
-		draggable: true,
-		progress: undefined,
-		theme: 'dark',
-	});
+	const handleCopyCode = () => toast.success('Copied!');
 
 	return (
 		<>
