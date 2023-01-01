@@ -6,6 +6,7 @@ import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import './assets/base.scss';
 import routes from './routes';
+import Generics from './Pages/generics';
 
 function App() {
 	return (
@@ -15,6 +16,7 @@ function App() {
 					<Navigation/>
 					<Routes>
 						<Route path={routes.REACT_PATTERNS.SWITCH_EVENT} element={<SwitchEvent/>} />
+						<Route path={routes.TYPESCRIPT.GENERICS} element={<Generics/>} />
 					</Routes>
 				</div>
 			</BrowserRouter>
