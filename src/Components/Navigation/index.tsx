@@ -13,7 +13,12 @@ const Navigation = () => {
 	const typescript = [{
 		route: routes.TYPESCRIPT.GENERICS,
 		name: 'Generics'
-	}];
+	},
+	{
+		route: routes.TYPESCRIPT.ENUM,
+		name: 'Enum'
+	}
+	];
 
 	return (
 		<nav>
