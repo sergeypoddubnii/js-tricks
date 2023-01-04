@@ -3,7 +3,8 @@ const routes = {
 		SWITCH_EVENT: '/react-patterns/switch-event',
 	},
 	TYPESCRIPT: {
-		GENERICS: '/typescript/generics'
+		GENERICS: '/typescript/generics',
+		ENUM: '/typescript/enum'
 	}
 };
 
