@@ -35,6 +35,10 @@ const Navigation = () => {
 					title='Typescript'
 					subList={typescript}
 				/>
+				<SubMenu
+					title='SOLID'
+					subList={[]}
+				/>
 			</ul>
 		</nav>
 	);

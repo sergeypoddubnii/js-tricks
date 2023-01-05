@@ -5,7 +5,8 @@ const routes = {
 	TYPESCRIPT: {
 		GENERICS: '/typescript/generics',
 		ENUM: '/typescript/enum'
-	}
+	},
+	SOLID: {}
 };
 
 export default routes;
