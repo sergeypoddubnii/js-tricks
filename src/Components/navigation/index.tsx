@@ -1,7 +1,7 @@
 import React from 'react';
 import NavigationLink from './NavigationLink';
 import './styles.scss';
-import SubMenu from '../SubMenu';
+import SubMenu from '../sub-menu';
 import routes from '../../routes';
 
 const Navigation = () => {

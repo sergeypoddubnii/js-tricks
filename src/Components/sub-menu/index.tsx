@@ -1,5 +1,5 @@
 import React, {FC, useState} from 'react';
-import NavigationLink from '../Navigation/NavigationLink';
+import NavigationLink from '../navigation/NavigationLink';
 import './styles.scss';
 import { RiArrowDropDownLine } from  'react-icons/ri';
 

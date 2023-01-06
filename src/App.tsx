@@ -1,5 +1,5 @@
 import React from 'react';
-import Navigation from './Components/Navigation';
+import Navigation from './Components/navigation';
 import {BrowserRouter, Routes, Route} from 'react-router-dom';
 import SwitchEvent from './Pages/react-patterns/switch-event';
 import { ToastContainer } from 'react-toastify';
