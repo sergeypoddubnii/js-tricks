@@ -31,10 +31,8 @@ const Navigation = () => {
 	return (
 		<nav>
 			<ul className='nav'>
-				<NavigationLink text='DevTools' to={'/'}/>
-				<NavigationLink text='Design Pattens' to={'/'}/>
 				<NavigationLink text='MV Pattens' to={'/'}/>
-				<NavigationLink text='JS' to={'/'}/>
+				<NavigationLink text='axios' to={'/'}/>
 				<SubMenu
 					title='React Patterns'
 					subList={reactPatterns}
