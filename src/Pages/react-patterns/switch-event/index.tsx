@@ -1,6 +1,6 @@
 import React from 'react';
-import Card from '../../../Components/card';
-import CodeSyntax from '../../../Components/code-syntax';
+import Card from 'Components/card';
+import CodeSyntax from 'Components/code-syntax';
 import codeExample from './pattern.json';
 import antiPattern from './anti-pattern.json';
 import './styles.scss';
