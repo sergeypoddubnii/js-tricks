@@ -1,6 +1,6 @@
 import React, {FC, useState} from 'react';
 import SyntaxHighlighter from 'react-syntax-highlighter';
-import { docco } from 'react-syntax-highlighter/dist/esm/styles/hljs';
+import { lioshi } from 'react-syntax-highlighter/dist/esm/styles/hljs';
 import {CopyToClipboard} from 'react-copy-to-clipboard';
 import { toast } from 'react-toastify';
 import './styles.scss';
@@ -25,7 +25,7 @@ const CodeSyntax:FC<IProps> = ({code, className}:IProps) => {
 				text={code}
 				onCopy={handleCopyCode}
 			>
-				<SyntaxHighlighter language="javascript" style={docco}>
+				<SyntaxHighlighter language="javascript" style={lioshi}>
 					{code}
 				</SyntaxHighlighter>
 			</CopyToClipboard>
