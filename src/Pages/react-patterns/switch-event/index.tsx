@@ -8,7 +8,9 @@ import './styles.scss';
 const SwitchEvent = () => {
 	return <>
 		<Card title='Switch Event'>
-			<h3>Switch Event</h3>
+			<p>
+				Switch event pattern makes one handle function usable for all events in React component. In this way we remove extra code. Its usable when component has a lot of similar events.
+			</p>
 			<div className='switch__container'>
 				<CodeSyntax code={codeExample} />
 				<CodeSyntax code={antiPattern} />
