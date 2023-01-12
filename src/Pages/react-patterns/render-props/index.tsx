@@ -6,7 +6,7 @@ import CodeSyntax from 'Components/code-syntax';
 const RenderProps = () => {
 	return (
 		<Card title='Render props'>
-			<h3>Switch Event</h3>
+			<p>Sharing logic and data among several components is easy with the render props pattern. Components can be made very reusable, by using a render or children prop.</p>
 			<CodeSyntax code={code}/>
 		</Card>
 	);
