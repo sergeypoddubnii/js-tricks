@@ -4,7 +4,7 @@ import Card from 'Components/card';
 const Generics = () => {
 	return <>
 		<Card title='Generics'>
-			<h3>Generics typescript</h3>
+			<h3>Generics</h3>
 		</Card>
 	</>;
 };
