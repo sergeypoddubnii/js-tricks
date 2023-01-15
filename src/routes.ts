@@ -8,6 +8,9 @@ const routes = {
 		GENERICS: '/typescript/generics',
 		ENUM: '/typescript/enum'
 	},
+	ECMASCRIPT: {
+		'2022': '/ecmascript/2022'
+	},
 	SOLID: {}
 };
 
