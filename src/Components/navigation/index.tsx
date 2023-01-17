@@ -28,6 +28,27 @@ const Navigation = () => {
 	}
 	];
 
+	const solid = [{
+		route: routes.SOLID.SINGLE_RESPONSIBILITY,
+		name: 'Singe responsibility'
+	},
+	{
+		route: routes.SOLID.OPEN_CLOSE,
+		name: 'Open Close'
+	},
+	{
+		route: routes.SOLID.LISKOV_SUBSTITUTION,
+		name: 'Liskov substitution'
+	},
+	{
+		route: routes.SOLID.INTERFACE_SEGREGATION,
+		name: 'Interface segregation'
+	},
+	{
+		route: routes.SOLID.DEPENDENCY_INVERSION,
+		name: 'Dependency inversion'
+	}];
+
 	return (
 		<nav>
 			<ul className='nav'>
@@ -43,7 +64,7 @@ const Navigation = () => {
 				/>
 				<SubMenu
 					title='SOLID'
-					subList={[]}
+					subList={solid}
 				/>
 			</ul>
 		</nav>
