@@ -4,7 +4,7 @@
 	width: 100%;
 	margin: 10px;
 	border: 1px solid $middle-grey;
-	border-radius: 4px;
+	border-radius: 5px;
 
 
 	&__title {
@@ -16,6 +16,8 @@
 		padding: 5px;
 		background-color: $light-grey;
 		border-bottom: 1px solid $middle-grey;
+		border-top-right-radius: 5px;
+		border-top-left-radius: 5px;
 	}
 
 	&__body{

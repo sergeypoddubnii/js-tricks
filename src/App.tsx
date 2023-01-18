@@ -8,6 +8,7 @@ import RenderProps from './Pages/react-patterns/render-props';
 import Toast from './Components/toast';
 import './assets/base.scss';
 import routes from './routes';
+import SingleResponsibility from 'Pages/solid/single-responsibility';
 
 function App() {
 	return (
@@ -20,6 +21,7 @@ function App() {
 						<Route path={routes.REACT_PATTERNS.RENDER_PROPS} element={<RenderProps/>} />
 						<Route path={routes.TYPESCRIPT.GENERICS} element={<Generics/>} />
 						<Route path={routes.TYPESCRIPT.ENUM} element={<Enum/>} />
+						<Route path={routes.SOLID.SINGLE_RESPONSIBILITY} element={<SingleResponsibility/>} />
 					</Routes>
 				</div>
 			</BrowserRouter>
