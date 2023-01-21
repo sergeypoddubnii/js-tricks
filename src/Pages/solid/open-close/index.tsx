@@ -1,7 +1,7 @@
 import React from 'react';
 import Card from 'Components/card';
 
-const SingleResponsibility = () => {
+const OpenClose = () => {
 
 	return (
 		<Card title='Open Close'>
@@ -10,4 +10,4 @@ const SingleResponsibility = () => {
 	);
 };
 
-export default SingleResponsibility;
+export default OpenClose;
