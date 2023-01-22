@@ -1,4 +1,7 @@
 const routes = {
+	DESIGN_PATTERNS: {
+		FACTORY: '/design-patterns/factory'
+	},
 	REACT_PATTERNS: {
 		SWITCH_EVENT: '/react-patterns/switch-event',
 		RENDER_PROPS: '/react-patterns/render-props',

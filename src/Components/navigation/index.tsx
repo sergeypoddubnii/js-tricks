@@ -28,6 +28,11 @@ const Navigation = () => {
 	}
 	];
 
+	const designPatterns = [{
+		route: routes.DESIGN_PATTERNS.FACTORY,
+		name: 'Factory'
+	}];
+
 	const solid = [{
 		route: routes.SOLID.SINGLE_RESPONSIBILITY,
 		name: 'Singe responsibility'
@@ -57,6 +62,10 @@ const Navigation = () => {
 				<SubMenu
 					title='React Patterns'
 					subList={reactPatterns}
+				/>
+				<SubMenu
+					title='Design Patterns'
+					subList={designPatterns}
 				/>
 				<SubMenu
 					title='Typescript'
