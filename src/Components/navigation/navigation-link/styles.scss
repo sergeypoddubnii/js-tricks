@@ -1,30 +1,39 @@
 @import '/src/assets/variables';
 
-.item {
-	width: 100%;
 
-	&:hover {
-		color: black;
-	}
-}
+.navigation-link {
+	&__container {
+		width: 100%;
+		display: flex;
 
-.link {
-	display: block;
-	width: 100%;
-	text-align: left;
-	padding: 10px 15px;
-	border-radius: 3px;
-	background-color: transparent;
-	border: none;
-	color: white;
-
-	&__active {
-		background-color: white;
-		color: $dark-grey;
+		&:hover {
+			color: black;
+		}
 	}
 
-	&:hover {
-		background-color: white;
-		color: $dark-grey;
+	&__link {
+		display: block;
+		width: 100%;
+		text-align: left;
+		padding: 10px 15px;
+		border-radius: 3px;
+		background-color: transparent;
+		border: none;
+		color: white;
+
+		&__active {
+			background-color: white;
+			color: $dark-grey;
+		}
+
+		&_secondary {
+			background-color: $dark-black;
+		}
+
+		&:hover {
+			background-color: white;
+			color: $dark-grey;
+		}
 	}
+
 }

@@ -1,7 +1,7 @@
 import React, {FC, useState} from 'react';
-import NavigationLink from '../navigation/navigation-link';
+import NavigationLink, {EnumNavigationType} from '../navigation/navigation-link';
 import './styles.scss';
-import { RiArrowDropDownLine } from  'react-icons/ri';
+import {RiArrowDropDownLine} from 'react-icons/ri';
 
 interface ISubListItem {
 	route: string;
@@ -11,16 +11,27 @@ interface ISubListItem {
 interface IProps {
 	title: string;
 	subList: ISubListItem[];
+	icon?: React.ReactNode;
 }
 
-const SubMenu: FC<IProps> = ({title, subList}:IProps) => {
+const SubMenu: FC<IProps> = ({title, subList, icon}:IProps) => {
 	const [isOpen, setIsOpen] = useState(false);
 
 	const handleToggleOpen = () => {
-		setIsOpen((prev) => !prev);
+		setIsOpen((prev:boolean) => !prev);
 	};
 
-	const list = subList.map((item:ISubListItem) => <NavigationLink key={item.name} text={item.name} to={item.route}/>);
+	const list = subList.map((item:ISubListItem) => {
+		return (
+			<NavigationLink
+				key={item.name}
+				text={item.name}
+				to={item.route}
+				icon={icon}
+				type={EnumNavigationType.SECONDARY}
+			/>
+		);
+	});
 
 	const classFactory = ():string => {
 		switch (true) {
