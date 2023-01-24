@@ -1,5 +1,7 @@
 import React, {FC} from 'react';
 import './styles.scss';
+import CardHeader from './card-header';
+import CardBody from './card-body';
 
 interface IProps {
 	title: string;
@@ -9,12 +11,10 @@ interface IProps {
 const Card:FC<IProps> = ({title, children}:IProps) => {
 	return (
 		<div className='card'>
-			<div className='card__header'>
-				<h4 className='card__title'>{title}</h4>
-			</div>
-			<div className='card__body'>
+			<CardHeader title={title} />
+			<CardBody>
 				{children}
-			</div>
+			</CardBody>
 		</div>
 	);
 };
