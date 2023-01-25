@@ -1,4 +1,11 @@
 .code {
 	width: 45%;
 	cursor: pointer;
+
+	&__comparison {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
 }
+
