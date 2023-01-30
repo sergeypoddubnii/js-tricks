@@ -14,8 +14,8 @@ const DependencyInversion = () => {
 			<p>In most cases, if you are violating the single-responsibility principle, then you might also be violating the dependency inversion principle</p>
 			<p>For any component, look into the import section at the top. If you are importing some library that’s not responsible for displaying something (e.g. a toast or modal), then you might be violating the principle</p>
 			<ComparisonCode>
-				<CodeSyntax code={antiPattern}/>
-				<CodeSyntax code={pattern}/>
+				<CodeSyntax code={antiPattern} title='anti-pattern'/>
+				<CodeSyntax code={pattern} title='pattern'/>
 			</ComparisonCode>
 		</Card>
 	);

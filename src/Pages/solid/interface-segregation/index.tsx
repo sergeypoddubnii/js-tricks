@@ -13,8 +13,8 @@ const InterfaceSegregation = () => {
 			<p>React perspective: Components should not depend on things they don’t need</p>
 			<p>Many client-specific interfaces are better than one general-purpose interface.</p>
 			<ComparisonCode>
-				<CodeSyntax code={antiPattern}/>
-				<CodeSyntax code={pattern}/>
+				<CodeSyntax code={antiPattern} title='anti-pattern'/>
+				<CodeSyntax code={pattern} title='pattern'/>
 			</ComparisonCode>
 		</Card>
 	);

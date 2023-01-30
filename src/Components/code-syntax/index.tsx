@@ -8,9 +8,10 @@ import './styles.scss';
 interface IProps {
 	code: string;
 	className?: string;
+	title?: string;
 }
 
-const CodeSyntax:FC<IProps> = ({code, className}:IProps) => {
+const CodeSyntax:FC<IProps> = ({code, className, title}:IProps) => {
 	const [copied, setCopied] = useState(false);
 
 	const handleCopyCode = () => {
@@ -21,6 +22,7 @@ const CodeSyntax:FC<IProps> = ({code, className}:IProps) => {
 
 	return (
 		<div className={className ? className : 'code'}>
+			<h6 className='code__title'>{title}</h6>
 			<CopyToClipboard
 				text={code}
 				onCopy={handleCopyCode}
