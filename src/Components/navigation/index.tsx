@@ -31,6 +31,10 @@ const Navigation = () => {
 	const designPatterns = [{
 		route: routes.DESIGN_PATTERNS.FACTORY,
 		name: 'Factory'
+	},
+	{
+		route: routes.DESIGN_PATTERNS.MODULE,
+		name: 'Module patterns'
 	}];
 
 	const solid = [{
