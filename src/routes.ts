@@ -1,4 +1,5 @@
 const routes = {
+	OOP_PRINCIPLES: '/OOP-principles',
 	DESIGN_PATTERNS: {
 		FACTORY: '/design-patterns/factory',
 		MODULE: '/design-patterns/module-pattern'

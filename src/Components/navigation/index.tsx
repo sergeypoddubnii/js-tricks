@@ -61,6 +61,7 @@ const Navigation = () => {
 	return (
 		<nav>
 			<ul className='nav'>
+				<NavigationLink text='OOP principles' to={routes.OOP_PRINCIPLES}/>
 				<NavigationLink text='MV Pattens' to={'/'}/>
 				<NavigationLink text='axios' to={'/'}/>
 				<SubMenu

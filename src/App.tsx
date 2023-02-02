@@ -13,6 +13,7 @@ import OpenClose from './Pages/solid/open-close';
 import LiskovSubstitution from './Pages/solid/liskov-substitution';
 import InterfaceSegregation from './Pages/solid/interface-segregation';
 import DependencyInversion from './Pages/solid/dependency-inversion';
+import OopPrinciples from './Pages/oop-principles';
 
 function App() {
 	return (
@@ -21,8 +22,11 @@ function App() {
 				<div style={{display: 'flex'}}>
 					<Navigation/>
 					<Routes>
+						<Route path={routes.OOP_PRINCIPLES} element={<OopPrinciples/>} />
+						{/*react-patterns*/}
 						<Route path={routes.REACT_PATTERNS.SWITCH_EVENT} element={<SwitchEvent/>} />
 						<Route path={routes.REACT_PATTERNS.RENDER_PROPS} element={<RenderProps/>} />
+						{/*typescript*/}
 						<Route path={routes.TYPESCRIPT.GENERICS} element={<Generics/>} />
 						<Route path={routes.TYPESCRIPT.ENUM} element={<Enum/>} />
 						{/*solid*/}
