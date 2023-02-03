@@ -58,6 +58,11 @@ const Navigation = () => {
 		name: 'Dependency inversion'
 	}];
 
+	const architecture = [{
+		route: routes.ARCHITECTURE.FLUX,
+		name: 'Flux'
+	}];
+
 	return (
 		<nav>
 			<ul className='nav'>
@@ -79,6 +84,10 @@ const Navigation = () => {
 				<SubMenu
 					title='SOLID'
 					subList={solid}
+				/>
+				<SubMenu
+					title='Architecture'
+					subList={architecture}
 				/>
 			</ul>
 		</nav>

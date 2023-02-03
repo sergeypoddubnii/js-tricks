@@ -22,6 +22,9 @@ const routes = {
 		LISKOV_SUBSTITUTION: '/solid/liskov-substitution',
 		INTERFACE_SEGREGATION: '/solid/interface-segregation',
 		DEPENDENCY_INVERSION: 'solid/dependency-inversion',
+	},
+	ARCHITECTURE: {
+		FLUX: '/architecture/flux',
 	}
 };
 

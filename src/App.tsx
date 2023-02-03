@@ -14,6 +14,7 @@ import LiskovSubstitution from './Pages/solid/liskov-substitution';
 import InterfaceSegregation from './Pages/solid/interface-segregation';
 import DependencyInversion from './Pages/solid/dependency-inversion';
 import OopPrinciples from './Pages/oop-principles';
+import Flux from './Pages/architectures/flux';
 
 function App() {
 	return (
@@ -35,6 +36,8 @@ function App() {
 						<Route path={routes.SOLID.LISKOV_SUBSTITUTION} element={<LiskovSubstitution/>} />
 						<Route path={routes.SOLID.INTERFACE_SEGREGATION} element={<InterfaceSegregation/>} />
 						<Route path={routes.SOLID.DEPENDENCY_INVERSION} element={<DependencyInversion/>} />
+						{/*architecture*/}
+						<Route path={routes.ARCHITECTURE.FLUX} element={<Flux/>} />
 					</Routes>
 				</div>
 			</BrowserRouter>
