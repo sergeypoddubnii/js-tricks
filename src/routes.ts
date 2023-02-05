@@ -16,6 +16,9 @@ const routes = {
 	ECMASCRIPT: {
 		'2022': '/ecmascript/2022'
 	},
+	REACT: {
+		V_18: '/react/v-18'
+	},
 	SOLID: {
 		SINGLE_RESPONSIBILITY: '/solid/single-responsibility',
 		OPEN_CLOSE: '/solid/open-close',

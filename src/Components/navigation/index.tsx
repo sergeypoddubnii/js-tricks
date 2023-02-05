@@ -63,6 +63,11 @@ const Navigation = () => {
 		name: 'Flux'
 	}];
 
+	const react = [{
+		route: routes.REACT.V_18,
+		name: 'React v-18'
+	}];
+
 	return (
 		<nav>
 			<ul className='nav'>
@@ -88,6 +93,10 @@ const Navigation = () => {
 				<SubMenu
 					title='Architecture'
 					subList={architecture}
+				/>
+				<SubMenu
+					title='React'
+					subList={react}
 				/>
 			</ul>
 		</nav>
