@@ -1,4 +1,5 @@
 {
 	"automaticBatching": "// Before: only React events were batched.\nsetTimeout(() => {\n  setCount(c => c + 1);\n  setFlag(f => !f);\n  // React will render twice, once for each state update (no batching)\n}, 1000);\n\n// After: updates inside of timeouts, promises,\n// native event handlers or any other event are batched.\nsetTimeout(() => {\n  setCount(c => c + 1);\n  setFlag(f => !f);\n  // React will only re-render once at the end (that's batching!)\n}, 1000);",
-	"transition": "import {startTransition} from 'react';\n\n// Urgent: Show what was typed\nsetInputValue(input);\n\n// Mark any state updates inside as transitions\nstartTransition(() => {\n  // Transition: Show the results\n  setSearchQuery(input);\n});"
+	"transition": "import {startTransition} from 'react';\n\n// Urgent: Show what was typed\nsetInputValue(input);\n\n// Mark any state updates inside as transitions\nstartTransition(() => {\n  // Transition: Show the results\n  setSearchQuery(input);\n});",
+	"suspense": "<Suspense fallback={<Spinner />}>\n  <Comments />\n</Suspense>"
 }
