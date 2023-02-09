@@ -1,3 +1,4 @@
 {
-	"dataFlow": "Action => Dispatcher => Store => View"
+	"dataFlow": "Action => Dispatcher => Store => View => Action",
+	"action": "{\n\tactionType: \"\",\n    data: {\n        title: \"Understanding Flux step by step\",\n        author: \"Sharvin\"\n    }\n}"
 }
