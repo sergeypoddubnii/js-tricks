@@ -16,6 +16,7 @@ import DependencyInversion from './Pages/solid/dependency-inversion';
 import OopPrinciples from './Pages/oop-principles';
 import Flux from './Pages/architectures/flux';
 import React18 from './Pages/react/react-18';
+import Mvc from './Pages/architectures/mvc';
 
 function App() {
 	return (
@@ -39,6 +40,7 @@ function App() {
 						<Route path={routes.SOLID.DEPENDENCY_INVERSION} element={<DependencyInversion/>} />
 						{/*architecture*/}
 						<Route path={routes.ARCHITECTURE.FLUX} element={<Flux/>} />
+						<Route path={routes.ARCHITECTURE.MVC} element={<Mvc/>} />
 						{/*react*/}
 						<Route path={routes.REACT.V_18} element={<React18/>} />
 					</Routes>

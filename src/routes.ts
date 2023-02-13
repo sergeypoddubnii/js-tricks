@@ -28,6 +28,7 @@ const routes = {
 	},
 	ARCHITECTURE: {
 		FLUX: '/architecture/flux',
+		MVC: '/mvc'
 	}
 };
 
