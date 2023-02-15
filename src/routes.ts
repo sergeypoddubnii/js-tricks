@@ -29,6 +29,9 @@ const routes = {
 	ARCHITECTURE: {
 		FLUX: '/architecture/flux',
 		MVC: '/mvc'
+	},
+	CUSTOM_REALIZATION: {
+		REDUX: '/custom-realization/redux'
 	}
 };
 

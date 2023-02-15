@@ -68,6 +68,11 @@ const Navigation = () => {
 		name: 'React v-18'
 	}];
 
+	const customRealization = [{
+		route: routes.CUSTOM_REALIZATION.REDUX,
+		name: 'Redux'
+	}];
+
 	return (
 		<nav>
 			<ul className='nav'>
@@ -97,6 +102,10 @@ const Navigation = () => {
 				<SubMenu
 					title='React'
 					subList={react}
+				/>
+				<SubMenu
+					title='Custom realization'
+					subList={customRealization}
 				/>
 			</ul>
 		</nav>
