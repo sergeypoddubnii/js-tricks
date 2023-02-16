@@ -17,7 +17,7 @@ import OopPrinciples from './Pages/oop-principles';
 import Flux from './Pages/architectures/flux';
 import React18 from './Pages/react/react-18';
 import Mvc from './Pages/architectures/mvc';
-import CustomRealization from "./Pages/custom-realization/redux";
+import CustomRealization from './Pages/custom-realization/custom-redux';
 
 function App() {
 	return (
