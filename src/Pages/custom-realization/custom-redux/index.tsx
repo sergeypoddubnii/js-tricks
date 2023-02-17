@@ -12,6 +12,8 @@ const CustomRedux = () => {
 			<CodeSyntax code={customRedux.reduxUsage}/>
 			<h6>combineReducers</h6>
 			<CodeSyntax code={customRedux.combineReducers}/>
+			<h6>Thunk middleware</h6>
+			<CodeSyntax code={customRedux.thunkMiddleware}/>
 		</Card>
 	);
 };
