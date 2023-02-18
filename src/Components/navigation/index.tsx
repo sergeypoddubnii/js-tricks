@@ -71,7 +71,12 @@ const Navigation = () => {
 	const customRealization = [{
 		route: routes.CUSTOM_REALIZATION.REDUX,
 		name: 'Redux'
-	}];
+	},
+	{
+		route: routes.CUSTOM_REALIZATION.PROMISE_ALL,
+		name: 'Promise all'
+	}
+	];
 
 	return (
 		<nav>

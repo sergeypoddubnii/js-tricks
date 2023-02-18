@@ -31,7 +31,8 @@ const routes = {
 		MVC: '/mvc'
 	},
 	CUSTOM_REALIZATION: {
-		REDUX: '/custom-realization/custom-redux'
+		REDUX: '/custom-realization/custom-redux',
+		PROMISE_ALL: '/custom-realization/promise-all',
 	}
 };
 

@@ -1,0 +1,3 @@
+{
+	"promiseIterative": "\nconst promiseAllIterative = (promises) => {\n\t// method returns promise\n \treturn new Promise((resolve, reject) => {\n\t\t// resolved promises\n\t\tlet results = [];\n\t\t// count for resolved promises\n\t\tlet completed = 0;\n\n\t\tpromises.forEach((promise, index) => {\n\t\t\t// resolve each promise\n\t\t\tPromise.resolve(promise).then((result) => {\n\t\t\t\tresults[index] = result;\n\t\t\t\tcompleted += 1;\n\t\t\t\t// compare completed promises with income promises\n\t\t\t\tif(completed === promises.length){\n\t\t\t\t\tresolve(results);\n\t\t\t\t}\n\t\t\t\t// show error \n\t\t\t}).catch((error) => reject(error));\n\t\t});\n\t});\n};\n"
+}
