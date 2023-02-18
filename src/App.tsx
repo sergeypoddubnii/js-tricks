@@ -19,6 +19,7 @@ import React18 from 'Pages/react/react-18';
 import Mvc from 'Pages/architectures/mvc';
 import CustomRealization from 'Pages/custom-realization/custom-redux';
 import PromiseAll from 'Pages/custom-realization/promise-all';
+import ArrayMethods from "./Pages/custom-realization/array-methods";
 
 function App() {
 	return (
@@ -48,6 +49,7 @@ function App() {
 						{/*custom realization*/}
 						<Route path={routes.CUSTOM_REALIZATION.REDUX} element={<CustomRealization/>} />
 						<Route path={routes.CUSTOM_REALIZATION.PROMISE_ALL} element={<PromiseAll/>} />
+						<Route path={routes.CUSTOM_REALIZATION.ARRAY_METHODS} element={<ArrayMethods/>} />
 					</Routes>
 				</div>
 			</BrowserRouter>

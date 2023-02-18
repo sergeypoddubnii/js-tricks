@@ -33,6 +33,7 @@ const routes = {
 	CUSTOM_REALIZATION: {
 		REDUX: '/custom-realization/custom-redux',
 		PROMISE_ALL: '/custom-realization/promise-all',
+		ARRAY_METHODS: '/custom-realization/array-methods',
 	}
 };
 
