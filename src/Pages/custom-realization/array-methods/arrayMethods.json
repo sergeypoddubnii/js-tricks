@@ -1,0 +1,5 @@
+{
+	"customMap": "function customMap(func){\n\tlet newArray = [];\n\tfor (let i = 0; i < this.length; i++) {\n\t\tconst newItem = func(this[i]);\n\t\tnewArray.push(newItem);\n\t}\n\treturn newArray;\n}",
+	"customForeach": "function customForeach(func){\n\tfor (let i = 0; i < this.length; i++) {\n\t\tthis[i] = func(this[i]);\n\t}\n\treturn this;\n}",
+	"customFilter": "function customFilter(func){\n\tlet newArray = [];\n\tfor (let i = 0; i < this.length; i++) {\n\t\tconst currentItem = this[i];\n\t\tif(func(currentItem)){\n\t\t\tnewArray.push(currentItem);\n\t\t}\n\t}\n\treturn newArray;\n}"
+}
