@@ -12,6 +12,8 @@ const ArrayMethods = () => {
 			<CodeSyntax code={customMethods.customForeach}/>
 			<h6>Custom filter</h6>
 			<CodeSyntax code={customMethods.customFilter}/>
+			<h6>Custom find</h6>
+			<CodeSyntax code={customMethods.customFind}/>
 		</Card>
 	);
 };
