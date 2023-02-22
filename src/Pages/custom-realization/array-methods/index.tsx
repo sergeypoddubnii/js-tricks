@@ -7,13 +7,15 @@ const ArrayMethods = () => {
 	return (
 		<Card title='Array Methods'>
 			<h6>Custom map</h6>
-			<CodeSyntax code={customMethods.customMap}/>
+			<CodeSyntax code={customMethods.map}/>
 			<h6>Custom foreach</h6>
-			<CodeSyntax code={customMethods.customForeach}/>
+			<CodeSyntax code={customMethods.foreach}/>
 			<h6>Custom filter</h6>
-			<CodeSyntax code={customMethods.customFilter}/>
+			<CodeSyntax code={customMethods.filter}/>
 			<h6>Custom find</h6>
-			<CodeSyntax code={customMethods.customFind}/>
+			<CodeSyntax code={customMethods.find}/>
+			<h6>Custom reduce</h6>
+			<CodeSyntax code={customMethods.reduce}/>
 		</Card>
 	);
 };
