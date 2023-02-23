@@ -16,6 +16,10 @@ const ArrayMethods = () => {
 			<CodeSyntax code={customMethods.find}/>
 			<h6>Custom reduce</h6>
 			<CodeSyntax code={customMethods.reduce}/>
+			<h6>Custom every</h6>
+			<CodeSyntax code={customMethods.every}/>
+			<h6>Custom some</h6>
+			<CodeSyntax code={customMethods.some}/>
 		</Card>
 	);
 };
