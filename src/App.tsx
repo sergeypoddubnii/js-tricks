@@ -18,7 +18,7 @@ import Flux from 'Pages/architectures/flux';
 import React18 from 'Pages/react/react-18';
 import Mvc from 'Pages/architectures/mvc';
 import CustomRealization from 'Pages/custom-realization/custom-redux';
-import PromiseAll from 'Pages/custom-realization/promise-all';
+import CustomPromise from 'Pages/custom-realization/promise';
 import ArrayMethods from './Pages/custom-realization/array-methods';
 
 function App() {
@@ -48,7 +48,7 @@ function App() {
 						<Route path={routes.REACT.V_18} element={<React18/>} />
 						{/*custom realization*/}
 						<Route path={routes.CUSTOM_REALIZATION.REDUX} element={<CustomRealization/>} />
-						<Route path={routes.CUSTOM_REALIZATION.PROMISE_ALL} element={<PromiseAll/>} />
+						<Route path={routes.CUSTOM_REALIZATION.PROMISE_ALL} element={<CustomPromise/>} />
 						<Route path={routes.CUSTOM_REALIZATION.ARRAY_METHODS} element={<ArrayMethods/>} />
 					</Routes>
 				</div>

@@ -74,7 +74,7 @@ const Navigation = () => {
 	},
 	{
 		route: routes.CUSTOM_REALIZATION.PROMISE_ALL,
-		name: 'Promise all'
+		name: 'Promise'
 	},
 	{
 		route: routes.CUSTOM_REALIZATION.ARRAY_METHODS,
