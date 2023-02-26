@@ -79,6 +79,10 @@ const Navigation = () => {
 	{
 		route: routes.CUSTOM_REALIZATION.ARRAY_METHODS,
 		name: 'Array Methods'
+	},
+	{
+		route: routes.CUSTOM_REALIZATION.HELPER_FUNCTIONS,
+		name: 'Helper Functions'
 	}
 	];
 

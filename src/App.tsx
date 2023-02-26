@@ -20,6 +20,7 @@ import Mvc from 'Pages/architectures/mvc';
 import CustomRealization from 'Pages/custom-realization/custom-redux';
 import CustomPromise from 'Pages/custom-realization/promise';
 import ArrayMethods from './Pages/custom-realization/array-methods';
+import HelperFunctions from './Pages/custom-realization/helper-functions';
 
 function App() {
 	return (
@@ -50,6 +51,7 @@ function App() {
 						<Route path={routes.CUSTOM_REALIZATION.REDUX} element={<CustomRealization/>} />
 						<Route path={routes.CUSTOM_REALIZATION.PROMISE_ALL} element={<CustomPromise/>} />
 						<Route path={routes.CUSTOM_REALIZATION.ARRAY_METHODS} element={<ArrayMethods/>} />
+						<Route path={routes.CUSTOM_REALIZATION.HELPER_FUNCTIONS} element={<HelperFunctions/>} />
 					</Routes>
 				</div>
 			</BrowserRouter>

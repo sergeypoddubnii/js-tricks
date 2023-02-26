@@ -34,6 +34,7 @@ const routes = {
 		REDUX: '/custom-realization/custom-redux',
 		PROMISE_ALL: '/custom-realization/promise',
 		ARRAY_METHODS: '/custom-realization/array-methods',
+		HELPER_FUNCTIONS: '/custom-realization/helper-functions',
 	}
 };
 

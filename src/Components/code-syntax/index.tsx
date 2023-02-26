@@ -27,7 +27,12 @@ const CodeSyntax:FC<IProps> = ({code, className, title}:IProps) => {
 				text={code}
 				onCopy={handleCopyCode}
 			>
-				<SyntaxHighlighter language="javascript" style={lioshi}>
+				<SyntaxHighlighter
+					language="javascript"
+					style={lioshi}
+					showLineNumbers={true}
+					wrapLongLines={true}
+				>
 					{code}
 				</SyntaxHighlighter>
 			</CopyToClipboard>

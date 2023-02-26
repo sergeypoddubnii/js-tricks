@@ -1,0 +1,3 @@
+{
+	"debounce": "const debounce = (fn, delay) => {\n\tlet timer;\n\treturn () => {\n\t\tclearTimeout(timer);\n\t\ttimer = setTimeout(() => {\n\t\t\tfn.apply();\n\t\t}, delay);\n\t};\n};\n\nfunction consoleLog() {\n\tconsole.log(\"debounced function\");\n}\n\nconst debouncedFunc = debounce(consoleLog, 1000);\ndebouncedFunc();\n"
+}
