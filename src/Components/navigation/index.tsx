@@ -18,25 +18,6 @@ const Navigation = () => {
 		name: 'HOC'
 	}];
 
-	const typescript = [{
-		route: routes.TYPESCRIPT.GENERICS,
-		name: 'Generics'
-	},
-	{
-		route: routes.TYPESCRIPT.ENUM,
-		name: 'Enum'
-	}
-	];
-
-	const designPatterns = [{
-		route: routes.DESIGN_PATTERNS.FACTORY,
-		name: 'Factory'
-	},
-	{
-		route: routes.DESIGN_PATTERNS.MODULE,
-		name: 'Module patterns'
-	}];
-
 	const solid = [{
 		route: routes.SOLID.SINGLE_RESPONSIBILITY,
 		name: 'Singe responsibility'
@@ -90,19 +71,9 @@ const Navigation = () => {
 		<nav>
 			<ul className='nav'>
 				<NavigationLink text='OOP principles' to={routes.OOP_PRINCIPLES}/>
-				<NavigationLink text='MV Pattens' to={'/'}/>
-				<NavigationLink text='axios' to={'/'}/>
 				<SubMenu
 					title='React Patterns'
 					subList={reactPatterns}
-				/>
-				<SubMenu
-					title='Design Patterns'
-					subList={designPatterns}
-				/>
-				<SubMenu
-					title='Typescript'
-					subList={typescript}
 				/>
 				<SubMenu
 					title='SOLID'
