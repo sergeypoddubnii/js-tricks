@@ -35,6 +35,9 @@ const routes = {
 		PROMISE_ALL: '/custom-realization/promise',
 		ARRAY_METHODS: '/custom-realization/array-methods',
 		HELPER_FUNCTIONS: '/custom-realization/helper-functions',
+	},
+	WEB_STAFF: {
+		URL_BROWSER_PROCESS: '/web-staff/url-browser-process'
 	}
 };
 

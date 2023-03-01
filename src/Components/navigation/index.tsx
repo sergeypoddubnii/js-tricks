@@ -67,6 +67,11 @@ const Navigation = () => {
 	}
 	];
 
+	const WebStaff = [{
+		route: routes.WEB_STAFF.URL_BROWSER_PROCESS,
+		name: 'Url browser process'
+	}];
+
 	return (
 		<nav>
 			<ul className='nav'>
@@ -90,6 +95,10 @@ const Navigation = () => {
 				<SubMenu
 					title='Custom realization'
 					subList={customRealization}
+				/>
+				<SubMenu
+					title='Web Staff'
+					subList={WebStaff}
 				/>
 			</ul>
 		</nav>

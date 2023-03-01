@@ -19,6 +19,7 @@ import CustomRealization from 'Pages/custom-realization/custom-redux';
 import CustomPromise from 'Pages/custom-realization/promise';
 import ArrayMethods from './Pages/custom-realization/array-methods';
 import HelperFunctions from './Pages/custom-realization/helper-functions';
+import UrlBrowserProcess from './Pages/web-staff/url-browser-process';
 
 function App() {
 	return (
@@ -47,6 +48,8 @@ function App() {
 						<Route path={routes.CUSTOM_REALIZATION.PROMISE_ALL} element={<CustomPromise/>} />
 						<Route path={routes.CUSTOM_REALIZATION.ARRAY_METHODS} element={<ArrayMethods/>} />
 						<Route path={routes.CUSTOM_REALIZATION.HELPER_FUNCTIONS} element={<HelperFunctions/>} />
+						{/*web-staff*/}
+						<Route path={routes.WEB_STAFF.URL_BROWSER_PROCESS} element={<UrlBrowserProcess/>} />
 					</Routes>
 				</div>
 			</BrowserRouter>
