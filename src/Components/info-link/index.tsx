@@ -1,6 +1,6 @@
 import React, {FC} from 'react';
 
-interface IProps {
+export interface IProps {
 	path: string;
 	text?: string;
 }
