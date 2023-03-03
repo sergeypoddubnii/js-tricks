@@ -1,0 +1,3 @@
+{
+	"pattern": "class Button extends React.Component {\n  render() {\n    return (\n      <button onClick={this.props.onClick}>\n        {this.props.text}\n      </button>\n    );\n  }\n}\n\nclass SubmitButton extends Button {\n  render() {\n    return (\n      <Button onClick={this.props.onSubmit} text=\"Submit\" />\n    );\n  }\n}\n"
+}
