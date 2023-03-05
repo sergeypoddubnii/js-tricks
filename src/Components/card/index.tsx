@@ -1,11 +1,11 @@
-import React, {FC} from 'react';
-import './styles.scss';
+import React, {FC, ReactNode} from 'react';
 import CardHeader from './card-header';
 import CardBody from './card-body';
+import './styles.scss';
 
-interface IProps {
+export interface IProps {
 	title: string;
-	children: React.ReactNode;
+	children: ReactNode;
 }
 
 const Card:FC<IProps> = ({title, children}:IProps) => {

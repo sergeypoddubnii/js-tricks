@@ -22,10 +22,10 @@
 	"scripts": {
 		"start": "react-scripts start",
 		"build": "react-scripts build",
-		"test": "react-scripts test",
+		"test": "react-scripts test --watchAll --coverage",
 		"eject": "react-scripts eject",
 		"ui": "start-storybook -p 6006 -s public",
-		"build-storybook": "build-storybook -s public",
+		"build-ui": "build-storybook -s public",
 		"lint": "eslint --ext .ts,.tsx,.js,.jsx src --fix"
 	},
 	"browserslist": {
