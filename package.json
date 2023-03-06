@@ -63,6 +63,7 @@
 		"eslint-plugin-react": "^7.31.8",
 		"husky": "^8.0.1",
 		"prop-types": "^15.8.1",
+		"storybook-addon-react-router-v6": "^0.2.1",
 		"typescript-plugin-css-modules": "^3.4.0",
 		"webpack": "^5.74.0"
 	}

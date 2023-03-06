@@ -1,7 +1,7 @@
 import React, {FC, useState} from 'react';
 import NavigationLink, {EnumNavigationType} from '../navigation/navigation-link';
-import './styles.scss';
 import {RiArrowDropDownLine} from 'react-icons/ri';
+import './styles.scss';
 
 interface ISubListItem {
 	route: string;
