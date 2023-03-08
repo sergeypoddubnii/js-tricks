@@ -14,7 +14,7 @@
 			"customMatcher": "\\.scss$"
 		}
 	}],
-  	"typeRoots" : ["src", "node_modules/@types"],
+  	"typeRoots" : ["src", "node_modules/@types", "src/types"],
     "allowJs": true,
     "skipLibCheck": true,
     "esModuleInterop": true,

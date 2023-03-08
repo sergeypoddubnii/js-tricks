@@ -1,7 +1,7 @@
 import { createSlice } from '@reduxjs/toolkit';
 import type { RootState } from 'store/store';
 
-interface CounterState {
+interface IState {
 	map: string;
 	foreach: string;
 	filter: string;
@@ -11,7 +11,7 @@ interface CounterState {
 	some: string;
 }
 
-const initialState: CounterState = {
+const initialState: IState = {
 	map: 'function customMapFunction(callback) {\n  const newArray = [];\n  for (let i = 0; i < this.length; i++) {\n    newArray[i] = callback(this[i], i);\n  }\n  return newArray;\n}\n\nArray.prototype.customMap = customMapFunction;',
 	foreach: 'function customForEachFunction(callback) {\n  for (let i = 0; i < this.length; i++) {\n    this[i] = callback(this[i], i);\n  }\n}\n\nArray.prototype.customForEach = customForEachFunction;',
 	filter: 'function customFilterFunction(callback) {\n  const resultArray = [];\n  for (let i = 0; i < this.length; i++) {\n    if (callback(this[i], i)) {\n      resultArray.push(this[i]);\n    }\n  }\n  return resultArray;\n}\n\nArray.prototype.customFilter = customFilterFunction;',

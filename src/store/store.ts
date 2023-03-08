@@ -1,9 +1,11 @@
 import { configureStore } from '@reduxjs/toolkit';
 import arrayMethodsSlice from 'Pages/custom-realization/array-methods/arrayMethodsSlice';
+import loadingPageProcess from 'Pages/web-staff/loading-page-process/loadingPageProcessSlice';
 
 export const store = configureStore({
 	reducer: {
-		arrayMethods: arrayMethodsSlice
+		arrayMethods: arrayMethodsSlice,
+		loadingPageProcess: loadingPageProcess
 	},
 });
 

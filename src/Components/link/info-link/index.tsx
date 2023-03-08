@@ -1,4 +1,5 @@
-import React, {FC} from 'react';
+import React, {FC, memo} from 'react';
+import './styles.scss';
 
 export interface IProps {
 	path: string;
@@ -12,10 +13,11 @@ const InfoLink:FC<IProps> = ({path, text}:IProps) => {
 			href={path}
 			target='_blank'
 			rel="noreferrer"
+			className='infoLink'
 		>
-			[{' '}{text ? text : cutString(path, 50)}{' '}]
+			[ ]{' '}{text ? text : cutString(path, 70)}{' '}
 		</a>
 	);
 };
 
-export default InfoLink;
+export default memo(InfoLink);

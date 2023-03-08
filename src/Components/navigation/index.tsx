@@ -68,7 +68,7 @@ const Navigation = () => {
 	];
 
 	const WebStaff = [{
-		route: routes.WEB_STAFF.URL_BROWSER_PROCESS,
+		route: routes.WEB_STAFF.LOADING_PAGE_PROCESS,
 		name: 'Url browser process'
 	}];
 
