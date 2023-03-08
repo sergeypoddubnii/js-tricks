@@ -2,8 +2,10 @@
 @import 'src/assets/base';
 
 .card {
-	width: 100%;
-	margin: 10px;
+	width: 70%;
+	height: calc(100vh - 10px);
+	overflow-y: scroll;
+	margin: 5px 50px;
 	border: 1px solid $middle-grey;
 	border-radius: 5px;
 

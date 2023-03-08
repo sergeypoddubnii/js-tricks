@@ -2,7 +2,7 @@ import React from 'react';
 import Card from 'Components/card';
 import InfoLink from 'Components/info-link';
 
-const UrlBrowserProcess = () => {
+const LoadingPageProcess = () => {
 	return (
 		<Card title={'Url browser process'}>
 			<ol>
@@ -31,4 +31,4 @@ const UrlBrowserProcess = () => {
 	);
 };
 
-export default UrlBrowserProcess;
+export default LoadingPageProcess;

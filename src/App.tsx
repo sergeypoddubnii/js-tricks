@@ -1,8 +1,6 @@
 import React from 'react';
 import Navigation from './Components/navigation';
 import {BrowserRouter, Routes, Route} from 'react-router-dom';
-import SwitchEvent from './Pages/react-patterns/switch-event';
-import RenderProps from './Pages/react-patterns/render-props';
 import Toast from './Components/toast';
 import './assets/base.scss';
 import routes from './routes';
@@ -19,7 +17,7 @@ import CustomRealization from 'Pages/custom-realization/custom-redux';
 import CustomPromise from 'Pages/custom-realization/promise';
 import ArrayMethods from './Pages/custom-realization/array-methods';
 import HelperFunctions from './Pages/custom-realization/helper-functions';
-import UrlBrowserProcess from './Pages/web-staff/url-browser-process';
+import LoadingPageProcess from './Pages/web-staff/loading-page-process';
 
 function App() {
 	return (
@@ -29,9 +27,6 @@ function App() {
 					<Navigation/>
 					<Routes>
 						<Route path={routes.OOP_PRINCIPLES} element={<OopPrinciples/>} />
-						{/*react-patterns*/}
-						<Route path={routes.REACT_PATTERNS.SWITCH_EVENT} element={<SwitchEvent/>} />
-						<Route path={routes.REACT_PATTERNS.RENDER_PROPS} element={<RenderProps/>} />
 						{/*solid*/}
 						<Route path={routes.SOLID.SINGLE_RESPONSIBILITY} element={<SingleResponsibility/>} />
 						<Route path={routes.SOLID.OPEN_CLOSE} element={<OpenClose/>} />
@@ -49,7 +44,7 @@ function App() {
 						<Route path={routes.CUSTOM_REALIZATION.ARRAY_METHODS} element={<ArrayMethods/>} />
 						<Route path={routes.CUSTOM_REALIZATION.HELPER_FUNCTIONS} element={<HelperFunctions/>} />
 						{/*web-staff*/}
-						<Route path={routes.WEB_STAFF.URL_BROWSER_PROCESS} element={<UrlBrowserProcess/>} />
+						<Route path={routes.WEB_STAFF.LOADING_PAGE_PROCESS} element={<LoadingPageProcess/>} />
 					</Routes>
 				</div>
 			</BrowserRouter>

@@ -1,25 +1,28 @@
 import React from 'react';
 import Card from 'Components/card';
 import CodeSyntax from 'Components/code-syntax';
-import customMethods from './arrayMethods.json';
+import {useAppSelector} from 'store/hooks';
+import { selectArrayMethods} from './arrayMethodsSlice';
 
 const ArrayMethods = () => {
+	const arrayMethods = useAppSelector(selectArrayMethods);
+
 	return (
 		<Card title='Array Methods'>
 			<h6>Custom map</h6>
-			<CodeSyntax code={customMethods.map}/>
+			<CodeSyntax code={arrayMethods.map}/>
 			<h6>Custom foreach</h6>
-			<CodeSyntax code={customMethods.foreach}/>
+			<CodeSyntax code={arrayMethods.foreach}/>
 			<h6>Custom filter</h6>
-			<CodeSyntax code={customMethods.filter}/>
+			<CodeSyntax code={arrayMethods.filter}/>
 			<h6>Custom find</h6>
-			<CodeSyntax code={customMethods.find}/>
+			<CodeSyntax code={arrayMethods.find}/>
 			<h6>Custom reduce</h6>
-			<CodeSyntax code={customMethods.reduce}/>
+			<CodeSyntax code={arrayMethods.reduce}/>
 			<h6>Custom every</h6>
-			<CodeSyntax code={customMethods.every}/>
+			<CodeSyntax code={arrayMethods.every}/>
 			<h6>Custom some</h6>
-			<CodeSyntax code={customMethods.some}/>
+			<CodeSyntax code={arrayMethods.some}/>
 		</Card>
 	);
 };
