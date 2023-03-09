@@ -5,19 +5,6 @@ import SubMenu from '../sub-menu';
 import routes from '../../routes';
 
 const Navigation = () => {
-	const reactPatterns = [{
-		route: routes.REACT_PATTERNS.SWITCH_EVENT,
-		name: 'Switch Event'
-	},
-	{
-		route: routes.REACT_PATTERNS.RENDER_PROPS,
-		name: 'Render props'
-	},
-	{
-		route: routes.REACT_PATTERNS.HOC,
-		name: 'HOC'
-	}];
-
 	const solid = [{
 		route: routes.SOLID.SINGLE_RESPONSIBILITY,
 		name: 'Singe responsibility'
@@ -69,17 +56,17 @@ const Navigation = () => {
 
 	const WebStaff = [{
 		route: routes.WEB_STAFF.LOADING_PAGE_PROCESS,
-		name: 'Url browser process'
+		name: 'Page loading process'
+	},
+	{
+		route: routes.WEB_STAFF.EVENT_LOOP,
+		name: 'Event loop'
 	}];
 
 	return (
 		<nav>
 			<ul className='nav'>
 				<NavigationLink text='OOP principles' to={routes.OOP_PRINCIPLES}/>
-				<SubMenu
-					title='React Patterns'
-					subList={reactPatterns}
-				/>
 				<SubMenu
 					title='SOLID'
 					subList={solid}

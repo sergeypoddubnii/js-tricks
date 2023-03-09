@@ -18,6 +18,7 @@ import CustomPromise from 'Pages/custom-realization/promise';
 import ArrayMethods from './Pages/custom-realization/array-methods';
 import HelperFunctions from './Pages/custom-realization/helper-functions';
 import LoadingPageProcess from './Pages/web-staff/loading-page-process';
+import EventLoop from './Pages/web-staff/event-loop';
 
 function App() {
 	return (
@@ -45,6 +46,7 @@ function App() {
 						<Route path={routes.CUSTOM_REALIZATION.HELPER_FUNCTIONS} element={<HelperFunctions/>} />
 						{/*web-staff*/}
 						<Route path={routes.WEB_STAFF.LOADING_PAGE_PROCESS} element={<LoadingPageProcess/>} />
+						<Route path={routes.WEB_STAFF.EVENT_LOOP} element={<EventLoop/>} />
 					</Routes>
 				</div>
 			</BrowserRouter>

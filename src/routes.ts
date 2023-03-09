@@ -37,7 +37,8 @@ const routes = {
 		HELPER_FUNCTIONS: '/custom-realization/helper-functions',
 	},
 	WEB_STAFF: {
-		LOADING_PAGE_PROCESS: '/web-staff/loading-page-process'
+		LOADING_PAGE_PROCESS: '/web-staff/loading-page-process',
+		EVENT_LOOP: '/web-staff/event-loop',
 	}
 };
 
