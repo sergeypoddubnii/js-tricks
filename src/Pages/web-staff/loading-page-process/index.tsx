@@ -28,7 +28,7 @@ const LoadingPageProcess = () => {
 				<li>Fourth, it checks the ISP cache</li>
 			</ol>
 			<InfoLink path={'https://en.wikipedia.org/wiki/Domain_Name_System'} />
-			<h4>4. The browser initiates a TCP connection with the server.</h4>
+			<h4>4. The browser initiates a TCP(Transmission Control Protocol) connection with the server.</h4>
 			<p>To transfer data packets between client and the server, it is important to have a TCP connection established. This connection is established using a process called the TCP/IP three-way handshake</p>
 			<ol>
 				<li>The client machine sends a synchronize packet to the server over the internet, asking if it is open for new connections.</li>
