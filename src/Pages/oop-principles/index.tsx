@@ -1,5 +1,5 @@
 import React, {FC} from 'react';
-import Card from 'Components/card';
+import Card from 'Components/containers/card';
 
 const OopPrinciples:FC = () => {
 	return (

@@ -1,0 +1,15 @@
+.hash {
+	&__menu {
+
+	}
+
+	&__item {
+		list-style-type: none;
+		margin-bottom: 5px;
+	}
+
+	&__item_active {
+		color: red;
+	}
+
+}

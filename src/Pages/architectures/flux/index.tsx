@@ -1,5 +1,5 @@
 import React from 'react';
-import Card from 'Components/card';
+import Card from 'Components/containers/card';
 import CodeSyntax from 'Components/code-syntax';
 import codeExample from './flux-example.json';
 

@@ -1,5 +1,5 @@
 import React from 'react';
-import Card from 'Components/card';
+import Card from 'Components/containers/card';
 import InfoLinks from 'Components/link/info-links';
 import {useAppSelector} from 'store/hooks';
 import {selectLoadingPageProcessSlice} from './loadingPageProcessSlice';

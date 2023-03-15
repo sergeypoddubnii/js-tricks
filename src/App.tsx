@@ -19,6 +19,7 @@ import ArrayMethods from './Pages/custom-realization/array-methods';
 import HelperFunctions from './Pages/custom-realization/helper-functions';
 import LoadingPageProcess from './Pages/web-staff/loading-page-process';
 import EventLoop from './Pages/web-staff/event-loop';
+import Solid from './Pages/solid';
 
 function App() {
 	return (
@@ -29,6 +30,7 @@ function App() {
 					<Routes>
 						<Route path={routes.OOP_PRINCIPLES} element={<OopPrinciples/>} />
 						{/*solid*/}
+						<Route path={routes.SOLID.hello} element={<Solid/>} />
 						<Route path={routes.SOLID.SINGLE_RESPONSIBILITY} element={<SingleResponsibility/>} />
 						<Route path={routes.SOLID.OPEN_CLOSE} element={<OpenClose/>} />
 						<Route path={routes.SOLID.LISKOV_SUBSTITUTION} element={<LiskovSubstitution/>} />

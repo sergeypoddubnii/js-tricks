@@ -1,5 +1,5 @@
 import React from 'react';
-import Card from 'Components/card';
+import Card from 'Components/containers/card';
 import codeExample from './react-18-code-example.json';
 import CodeSyntax from 'Components/code-syntax';
 

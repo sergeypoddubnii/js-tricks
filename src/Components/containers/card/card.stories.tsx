@@ -1,6 +1,6 @@
 import React from 'react';
 import Card from './index';
-import '../../assets/base.scss';
+import '../../../assets/base.scss';
 import { ComponentStory, ComponentMeta } from '@storybook/react';
 
 const meta = {
