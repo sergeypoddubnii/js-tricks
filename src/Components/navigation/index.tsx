@@ -5,26 +5,6 @@ import SubMenu from '../sub-menu';
 import routes from '../../routes';
 
 const Navigation = () => {
-	const solid = [{
-		route: routes.SOLID.SINGLE_RESPONSIBILITY,
-		name: 'Singe responsibility'
-	},
-	{
-		route: routes.SOLID.OPEN_CLOSE,
-		name: 'Open Close'
-	},
-	{
-		route: routes.SOLID.LISKOV_SUBSTITUTION,
-		name: 'Liskov substitution'
-	},
-	{
-		route: routes.SOLID.INTERFACE_SEGREGATION,
-		name: 'Interface segregation'
-	},
-	{
-		route: routes.SOLID.DEPENDENCY_INVERSION,
-		name: 'Dependency inversion'
-	}];
 
 	const architecture = [{
 		route: routes.ARCHITECTURE.FLUX,
@@ -67,10 +47,7 @@ const Navigation = () => {
 		<nav>
 			<ul className='nav'>
 				<NavigationLink text='OOP principles' to={routes.OOP_PRINCIPLES}/>
-				<SubMenu
-					title='SOLID'
-					subList={solid}
-				/>
+				<NavigationLink text='SOLID' to={routes.SOLID}/>
 				<SubMenu
 					title='Architecture'
 					subList={architecture}

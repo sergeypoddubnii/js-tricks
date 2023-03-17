@@ -24,7 +24,7 @@ const HashMenu:FC<IProps> = ({menu}:IProps) => {
 				<LinkHash
 					to={item.to}
 					text={item.text}
-					className={hash === item.to ? 'hash__item_active' : ''}
+					className={hash === item.to ? 'hash__link hash__link_active' : 'hash__link'}
 				/>
 			</li>
 		);

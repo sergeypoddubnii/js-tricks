@@ -1,12 +1,11 @@
 import React from 'react';
-import Card from 'Components/containers/card';
 import CodeSyntax from 'Components/code-syntax';
 import code from './pattern.json';
 
 const LiskovSubstitution = () => {
 
 	return (
-		<Card title='Liskov Substitution'>
+		<>
 			<p>Subclasses should be substitutable for their superclasses</p>
 			<p>
 				The Liskov Substitution Principle (LSP) is one of the SOLID principles of software development. It states that any instance of a base class should be able to be replaced by an instance of any of its derived classes without altering the correctness of the program.
@@ -18,7 +17,7 @@ const LiskovSubstitution = () => {
 				In summary, the Liskov Substitution Principle is an important principle in software development, including React. By designing components that adhere to the LSP, you can create more flexible and maintainable code that can be easily extended and modified without breaking the functionality of the application.
 			</p>
 			<CodeSyntax code={code.pattern} />
-		</Card>
+		</>
 	);
 };
 

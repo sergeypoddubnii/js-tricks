@@ -19,14 +19,7 @@ const routes = {
 	REACT: {
 		V_18: '/react/v-18'
 	},
-	SOLID: {
-		SINGLE_RESPONSIBILITY: '/solid/single-responsibility',
-		OPEN_CLOSE: '/solid/open-close',
-		LISKOV_SUBSTITUTION: '/solid/liskov-substitution',
-		INTERFACE_SEGREGATION: '/solid/interface-segregation',
-		DEPENDENCY_INVERSION: 'solid/dependency-inversion',
-		hello: 'hello'
-	},
+	SOLID: '/solid',
 	ARCHITECTURE: {
 		FLUX: '/architecture/flux',
 		MVC: '/mvc'

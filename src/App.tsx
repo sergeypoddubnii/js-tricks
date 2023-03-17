@@ -4,11 +4,6 @@ import {BrowserRouter, Routes, Route} from 'react-router-dom';
 import Toast from './Components/toast';
 import './assets/base.scss';
 import routes from './routes';
-import SingleResponsibility from 'Pages/solid/single-responsibility';
-import OpenClose from './Pages/solid/open-close';
-import LiskovSubstitution from './Pages/solid/liskov-substitution';
-import InterfaceSegregation from './Pages/solid/interface-segregation';
-import DependencyInversion from './Pages/solid/dependency-inversion';
 import OopPrinciples from 'Pages/oop-principles';
 import Flux from 'Pages/architectures/flux';
 import React18 from 'Pages/react/react-18';
@@ -30,12 +25,7 @@ function App() {
 					<Routes>
 						<Route path={routes.OOP_PRINCIPLES} element={<OopPrinciples/>} />
 						{/*solid*/}
-						<Route path={routes.SOLID.hello} element={<Solid/>} />
-						<Route path={routes.SOLID.SINGLE_RESPONSIBILITY} element={<SingleResponsibility/>} />
-						<Route path={routes.SOLID.OPEN_CLOSE} element={<OpenClose/>} />
-						<Route path={routes.SOLID.LISKOV_SUBSTITUTION} element={<LiskovSubstitution/>} />
-						<Route path={routes.SOLID.INTERFACE_SEGREGATION} element={<InterfaceSegregation/>} />
-						<Route path={routes.SOLID.DEPENDENCY_INVERSION} element={<DependencyInversion/>} />
+						<Route path={routes.SOLID} element={<Solid/>} />
 						{/*architecture*/}
 						<Route path={routes.ARCHITECTURE.FLUX} element={<Flux/>} />
 						<Route path={routes.ARCHITECTURE.MVC} element={<Mvc/>} />
