@@ -2,12 +2,11 @@ import React from 'react';
 
 interface IProps {
 	text: string;
-	hashId?: string;
 }
 
-const TitleHash = ({text, hashId}:IProps) => {
+const TitleHash = ({text}:IProps) => {
 	return (
-		<h4 id={hashId?.slice(1, hashId.length)}>{text}</h4>
+		<h4>{text}</h4>
 	);
 };
 

@@ -11,7 +11,7 @@ const LinkHash:FC<IProps> = ({to, text, className}:IProps) => {
 	return (
 		<NavHashLink
 			smooth
-			to={to}
+			to={`#${to}`}
 			className={className}
 		>
 			{text}

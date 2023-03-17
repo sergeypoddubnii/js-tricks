@@ -1,6 +1,6 @@
 import React from 'react';
-import './styles.scss';
 import TitleHash from 'Components/title/title-hash';
+import './styles.scss';
 
 interface IProps {
 	children: React.ReactNode;
@@ -8,12 +8,12 @@ interface IProps {
 	hashId?: string;
 }
 
-const Section = ({children, title}:IProps) => {
+const Section = ({children, title, hashId}:IProps) => {
 	return (
-		<div>
-			<TitleHash text={title} hashId={''}/>
+		<section id={hashId} className='section'>
+			<TitleHash text={title}/>
 			{children}
-		</div>
+		</section>
 	);
 };
 

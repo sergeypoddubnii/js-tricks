@@ -6,7 +6,6 @@
 	height: calc(100vh - 10px);
 	overflow-y: scroll;
 	margin: 5px 50px;
-	border: 1px solid $middle-grey;
 	border-radius: 5px;
 
 
@@ -16,15 +15,14 @@
 	}
 
 	&__header {
-		padding: 5px;
-		background-color: $light-grey;
-		border-bottom: 1px solid $middle-grey;
-		border-top-right-radius: 5px;
-		border-top-left-radius: 5px;
+		padding: 10px;
+		border-top: 1px solid $middle-grey;
+		text-align: center;
 	}
 
-	&__body{
+	&__body {
 		padding: 5px 20px;
+		border: 1px solid $middle-grey;
 	}
 
 
