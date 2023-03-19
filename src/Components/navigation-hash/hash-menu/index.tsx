@@ -13,7 +13,10 @@ interface IProps {
 }
 
 const HashMenu:FC<IProps> = ({menu}:IProps) => {
-	const {hash} = useLocation();
+	const getHashId = () => {
+		const {hash} = useLocation();
+		return hash.slice(1,hash.length);
+	};
 
 	const hashList = menu.map((item:IHash) => {
 		return (
@@ -24,7 +27,7 @@ const HashMenu:FC<IProps> = ({menu}:IProps) => {
 				<LinkHash
 					to={item.to}
 					text={item.text}
-					className={hash === item.to ? 'hash__link hash__link_active' : 'hash__link'}
+					className={getHashId() === item.to ? 'hash__link hash__link_active' : 'hash__link'}
 				/>
 			</li>
 		);
