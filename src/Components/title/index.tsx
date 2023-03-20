@@ -1,6 +1,6 @@
 import React, {FC} from 'react';
 
-export enum EnumTitleType {
+export enum EnumTitleVARIANT {
 	DEFAULT = 'default',
 	SECTION = 'section',
 	PAGE = 'page',
@@ -9,12 +9,12 @@ export enum EnumTitleType {
 
 interface IProps {
 	title: string;
-	type?: EnumTitleType;
+	variant?: EnumTitleVARIANT;
 }
 
-const Title:FC<IProps> = ({title, type=EnumTitleType.DEFAULT}:IProps) => {
-	switch (type) {
-	case EnumTitleType.DEFAULT:
+const Title:FC<IProps> = ({title, variant=EnumTitleVARIANT.DEFAULT}:IProps) => {
+	switch (variant) {
+	case EnumTitleVARIANT.DEFAULT:
 		return <h4>{title}</h4>;
 	default:
 		return <h4>{title}</h4>;
