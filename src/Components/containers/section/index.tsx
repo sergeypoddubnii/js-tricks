@@ -19,9 +19,9 @@ const Section = ({children, title, hashId}:IProps) => {
 
 	useEffect(() => {
 		const hash = location.hash.slice(1, location.hash.length);
-		if(hash === hashId) {
-			return;
-		}
+
+		if(hash === hashId) return;
+
 		navigate(`#${hashId}`);
 	},[isOnScreen]);
 

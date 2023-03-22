@@ -32,6 +32,7 @@ const solidHash:IHash[] = [
 ];
 
 const Solid: FC = () => {
+
 	return (
 		<PageContainer>
 			<Card title='S.O.L.I.D.'>
