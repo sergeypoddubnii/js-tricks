@@ -6,9 +6,8 @@ import './assets/base.scss';
 import routes from './routes';
 import OopPrinciples from 'Pages/oop-principles';
 import Flux from 'Pages/architectures/flux';
-import React18 from 'Pages/react/react-18';
 import Mvc from 'Pages/architectures/mvc';
-import CustomRealization from 'Pages/custom-realization/custom-redux';
+import CustomRedux from 'Pages/custom-realization/custom-redux';
 import CustomPromise from 'Pages/custom-realization/promise';
 import ArrayMethods from './Pages/custom-realization/array-methods';
 import HelperFunctions from './Pages/custom-realization/helper-functions';
@@ -29,10 +28,8 @@ function App() {
 						{/*architecture*/}
 						<Route path={routes.ARCHITECTURE.FLUX} element={<Flux/>} />
 						<Route path={routes.ARCHITECTURE.MVC} element={<Mvc/>} />
-						{/*react*/}
-						<Route path={routes.REACT.V_18} element={<React18/>} />
 						{/*custom realization*/}
-						<Route path={routes.CUSTOM_REALIZATION.REDUX} element={<CustomRealization/>} />
+						<Route path={routes.CUSTOM_REALIZATION.REDUX} element={<CustomRedux/>} />
 						<Route path={routes.CUSTOM_REALIZATION.PROMISE_ALL} element={<CustomPromise/>} />
 						<Route path={routes.CUSTOM_REALIZATION.ARRAY_METHODS} element={<ArrayMethods/>} />
 						<Route path={routes.CUSTOM_REALIZATION.HELPER_FUNCTIONS} element={<HelperFunctions/>} />

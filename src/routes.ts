@@ -16,9 +16,6 @@ const routes = {
 	ECMASCRIPT: {
 		'2022': '/ecmascript/2022'
 	},
-	REACT: {
-		V_18: '/react/v-18'
-	},
 	SOLID: '/solid',
 	ARCHITECTURE: {
 		FLUX: '/architecture/flux',
