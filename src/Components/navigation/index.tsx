@@ -11,11 +11,6 @@ const Navigation = () => {
 		name: 'Flux'
 	}];
 
-	const react = [{
-		route: routes.REACT.V_18,
-		name: 'React v-18'
-	}];
-
 	const customRealization = [{
 		route: routes.CUSTOM_REALIZATION.REDUX,
 		name: 'Redux'
@@ -51,10 +46,6 @@ const Navigation = () => {
 				<SubMenu
 					title='Architecture'
 					subList={architecture}
-				/>
-				<SubMenu
-					title='React'
-					subList={react}
 				/>
 				<SubMenu
 					title='Custom realization'

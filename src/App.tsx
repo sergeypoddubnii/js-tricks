@@ -20,7 +20,7 @@ function App() {
 		<>
 			<BrowserRouter>
 				<div style={{display: 'flex'}}>
-					<Navigation/>
+					<Navigation />
 					<Routes>
 						<Route path={routes.OOP_PRINCIPLES} element={<OopPrinciples/>} />
 						{/*solid*/}

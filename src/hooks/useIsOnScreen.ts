@@ -1,4 +1,5 @@
 import React from 'react';
+import throttle from '../helpers/throttle';
 
 interface IOptions {
 	threshold: number | number[];
@@ -6,8 +7,7 @@ interface IOptions {
 
 const useIsOnScreen = (ref: React.RefObject<HTMLElement>, options: IOptions) => {
 	const [isIntersecting, setIsIntersecting] = React.useState(false);
-
-	React.useEffect(() => {
+	const observeFunctions = () => {
 		const observer = new IntersectionObserver(([entry]) => {
 			setIsIntersecting(entry.isIntersecting);
 		}, options);
@@ -21,7 +21,11 @@ const useIsOnScreen = (ref: React.RefObject<HTMLElement>, options: IOptions) => 
 				observer.unobserve(ref.current);
 			}
 		};
-	}, []);
+	};
+
+	const throttedObserve = throttle(observeFunctions, 200);
+
+	React.useEffect(throttedObserve, []);
 
 	return isIntersecting;
 };
