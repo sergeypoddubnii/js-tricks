@@ -3,13 +3,14 @@ import Navigation from './Components/navigation';
 import {BrowserRouter} from 'react-router-dom';
 import Toast from './Components/toast';
 import './assets/base.scss';
-import Router from './core/router';
+import Router from './core/router/router';
+import Loader from 'Components/loader';
 
 function App() {
 	return (
 		<>
 			<BrowserRouter>
-				<Suspense fallback={<div/>}>
+				<Suspense fallback={<Loader/>}>
 					<div style={{display: 'flex'}}>
 						<Navigation />
 						<Router />

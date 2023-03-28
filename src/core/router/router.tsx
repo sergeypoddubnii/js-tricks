@@ -1,5 +1,5 @@
 import React from 'react';
-import routePaths from './constants/route-paths';
+import routePaths from '../constants/route-paths';
 import {useRoutes} from 'react-router-dom';
 
 const OopPrinciples = React.lazy(() => import('Pages/oop-principles'));
