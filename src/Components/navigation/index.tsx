@@ -2,7 +2,7 @@ import React from 'react';
 import NavigationLink from './navigation-link';
 import './styles.scss';
 import SubMenu from '../sub-menu';
-import routes from '../../routes';
+import routes from '../../core/constants/route-paths';
 
 const Navigation = () => {
 

@@ -1,4 +1,4 @@
-const routes = {
+const routePaths = {
 	OOP_PRINCIPLES: '/OOP-principles',
 	DESIGN_PATTERNS: {
 		FACTORY: '/design-patterns/factory',
@@ -33,4 +33,4 @@ const routes = {
 	}
 };
 
-export default routes;
+export default routePaths;
