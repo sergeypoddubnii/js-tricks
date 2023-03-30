@@ -1,8 +1,8 @@
 import React, {useEffect} from 'react';
-import './styles.scss';
-import Title from 'Components/title';
-import useIsOnScreen from 'hooks/useIsOnScreen';
 import {useNavigate, useLocation} from 'react-router-dom';
+import { NavHashLink } from 'react-router-hash-link';
+import useIsOnScreen from 'hooks/useIsOnScreen';
+import './styles.scss';
 
 interface IProps {
 	children: React.ReactNode;
@@ -14,11 +14,12 @@ const Section = ({children, title, hashId}:IProps) => {
 	const navigate = useNavigate();
 	const location  = useLocation();
 
-	const ref = React.useRef<HTMLElement>(null);
-	const isOnScreen = useIsOnScreen(ref, {threshold: 0.55});
+	const ref = React.useRef<HTMLAnchorElement>(null);
+	const isOnScreen = useIsOnScreen(ref, {threshold: 1});
 
 	useEffect(() => {
-		const hash = location.hash.slice(1, location.hash.length);
+		const HASH_INDEX = 1;
+		const hash = location.hash.slice(HASH_INDEX, location.hash.length);
 
 		if(hash === hashId) return;
 
@@ -29,9 +30,15 @@ const Section = ({children, title, hashId}:IProps) => {
 		<section
 			id={hashId}
 			className='section'
-			ref={ref}
 		>
-			<Title title={title} />
+			<NavHashLink
+				smooth
+				to={`#${hashId}`}
+				className='section__title'
+				ref={ref}
+			>
+				#{title}
+			</NavHashLink>
 			{children}
 		</section>
 	);
