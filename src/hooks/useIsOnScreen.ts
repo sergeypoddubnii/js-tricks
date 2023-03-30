@@ -1,5 +1,5 @@
 import React from 'react';
-import throttle from '../helpers/throttle';
+import throttle from '../core/helpers/throttle';
 
 interface IOptions {
 	threshold: number | number[];

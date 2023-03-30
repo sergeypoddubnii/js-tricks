@@ -1,6 +1,7 @@
 import React from 'react';
 import routePaths from '../constants/route-paths';
 import {useRoutes} from 'react-router-dom';
+import Javascript from '../../Pages/javascript';
 
 const OopPrinciples = React.lazy(() => import('Pages/oop-principles'));
 const Flux = React.lazy(() => import('Pages/architectures/flux'));
@@ -53,6 +54,10 @@ const routes = [
 	{
 		path: routePaths.SOLID,
 		element: <Solid />,
+	},
+	{
+		path: routePaths.JAVASCRIPT,
+		element: <Javascript />,
 	},
 ];
 
