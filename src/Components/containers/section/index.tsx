@@ -11,19 +11,22 @@ interface IProps {
 }
 
 const Section = ({children, title, hashId}:IProps) => {
+	const HASH_SIGN = '#';
+	const HASH_INDEX = 1;
+	const THRESHOLD = 1;
+
 	const navigate = useNavigate();
 	const location  = useLocation();
 
 	const ref = React.useRef<HTMLAnchorElement>(null);
-	const isOnScreen = useIsOnScreen(ref, {threshold: 1});
+	const isOnScreen = useIsOnScreen(ref, {threshold: THRESHOLD});
 
 	useEffect(() => {
-		const HASH_INDEX = 1;
 		const hash = location.hash.slice(HASH_INDEX, location.hash.length);
 
 		if(hash === hashId) return;
 
-		navigate(`#${hashId}`);
+		navigate(`${HASH_SIGN}${hashId}`);
 	},[isOnScreen]);
 
 	return (
@@ -33,11 +36,11 @@ const Section = ({children, title, hashId}:IProps) => {
 		>
 			<NavHashLink
 				smooth
-				to={`#${hashId}`}
+				to={`${HASH_SIGN}${hashId}`}
 				className='section__title'
 				ref={ref}
 			>
-				#{title}
+				{HASH_SIGN}{title}
 			</NavHashLink>
 			{children}
 		</section>
