@@ -1,5 +1,22 @@
 .code {
-	cursor: pointer;
+	position: relative;
+
+	&:hover &__button {
+		display: block;
+		position: absolute;
+		top: 10px;
+		right: 10px;
+		cursor: pointer;
+	}
+
+	&__button {
+		display: none;
+	}
+
+	&__icon {
+		fill: #fff;
+		font-size: 24px;
+	}
 
 	&__comparison {
 		display: flex;
@@ -10,4 +27,3 @@
 		text-align: center;
 	}
 }
-

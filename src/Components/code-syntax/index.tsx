@@ -1,8 +1,8 @@
-import React, {FC, useState} from 'react';
+import React, {FC} from 'react';
 import SyntaxHighlighter from 'react-syntax-highlighter';
-import { lioshi } from 'react-syntax-highlighter/dist/cjs/styles/hljs';
-import {CopyToClipboard} from 'react-copy-to-clipboard';
-import { toast } from 'react-toastify';
+import { agate } from 'react-syntax-highlighter/dist/cjs/styles/hljs';
+import {AiFillCopy} from 'react-icons/ai';
+import CopyButton from './copy-button';
 import './styles.scss';
 
 interface IProps {
@@ -12,30 +12,20 @@ interface IProps {
 }
 
 const CodeSyntax:FC<IProps> = ({code, className, title}:IProps) => {
-	const [copied, setCopied] = useState(false);
-
-	const handleCopyCode = () => {
-		if(copied) return;
-		setCopied(true);
-		toast.success('Copied!');
-	};
-
 	return (
-		<div className={className ? className : 'code'}>
+		<div className={className ? `${className} code` : 'code'}>
 			<h6 className='code__title'>{title}</h6>
-			<CopyToClipboard
-				text={code}
-				onCopy={handleCopyCode}
+			<CopyButton>
+				<AiFillCopy className='code__icon'/>
+			</CopyButton>
+			<SyntaxHighlighter
+				language="javascript"
+				style={agate}
+				showLineNumbers={true}
+				wrapLongLines={true}
 			>
-				<SyntaxHighlighter
-					language="javascript"
-					style={lioshi}
-					showLineNumbers={true}
-					wrapLongLines={true}
-				>
-					{code}
-				</SyntaxHighlighter>
-			</CopyToClipboard>
+				{code}
+			</SyntaxHighlighter>
 		</div>
 	);
 };
