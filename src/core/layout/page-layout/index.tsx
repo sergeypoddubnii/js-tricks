@@ -5,7 +5,7 @@ interface IProps {
 	children: React.ReactNode;
 }
 
-const PageContainer:FC<IProps> = ({children}:IProps) => {
+const PageLayout:FC<IProps> = ({children}:IProps) => {
 	return (
 		<div className='page__container'>
 			{children}
@@ -13,4 +13,4 @@ const PageContainer:FC<IProps> = ({children}:IProps) => {
 	);
 };
 
-export default PageContainer;
+export default PageLayout;

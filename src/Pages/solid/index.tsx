@@ -1,5 +1,5 @@
 import React, {FC} from 'react';
-import PageContainer from 'Components/containers/page-container';
+import PageLayout from 'core/layout/page-layout';
 import Card from 'Components/containers/card';
 import HashMenu, {IHash} from 'Components/navigation-hash/hash-menu';
 import DependencyInversion from './dependency-inversion';
@@ -34,7 +34,7 @@ const solidHash:IHash[] = [
 const Solid: FC = () => {
 
 	return (
-		<PageContainer>
+		<PageLayout>
 			<Card title='S.O.L.I.D.'>
 				<SingleResponsibility hashId={solidHash[0].to}/>
 				<OpenClose hashId={solidHash[1].to} />
@@ -43,7 +43,7 @@ const Solid: FC = () => {
 				<DependencyInversion hashId={solidHash[4].to}/>
 			</Card>
 			<HashMenu menu={solidHash} />
-		</PageContainer>
+		</PageLayout>
 	);
 };
 
