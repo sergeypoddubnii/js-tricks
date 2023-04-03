@@ -5,16 +5,17 @@ import Toast from './Components/toast';
 import Router from './core/router/router';
 import Loader from 'Components/loader';
 import './assets/base.scss';
+import AppLayout from './core/layout/app-layout';
 
 function App() {
 	return (
 		<>
 			<BrowserRouter>
 				<Suspense fallback={<Loader/>}>
-					<div style={{display: 'flex'}}>
+					<AppLayout>
 						<Navigation />
 						<Router />
-					</div>
+					</AppLayout>
 				</Suspense>
 			</BrowserRouter>
 			<Toast />
