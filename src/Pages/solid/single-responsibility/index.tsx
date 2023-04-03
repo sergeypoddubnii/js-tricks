@@ -1,7 +1,7 @@
 import React, {FC} from 'react';
 import CodeSyntax from 'Components/code-syntax';
 import code from './singe-responsibility.json';
-import Section from 'Components/containers/section';
+import Section from 'Components/section';
 
 interface IProps {
 	hashId: string;

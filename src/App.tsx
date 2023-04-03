@@ -2,9 +2,9 @@ import React, {Suspense} from 'react';
 import Navigation from './Components/navigation';
 import {BrowserRouter} from 'react-router-dom';
 import Toast from './Components/toast';
-import './assets/base.scss';
 import Router from './core/router/router';
 import Loader from 'Components/loader';
+import './assets/base.scss';
 
 function App() {
 	return (

@@ -3,7 +3,7 @@ import CodeSyntax from 'Components/code-syntax';
 import ComparisonCode from '../../../Components/code-syntax/comparison-code';
 import antiPattern from './anti-pattern.json';
 import pattern from './pattern.json';
-import Section from 'Components/containers/section';
+import Section from 'Components/section';
 
 interface IProps {
 	hashId: string;

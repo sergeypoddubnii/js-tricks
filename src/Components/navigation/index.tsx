@@ -1,7 +1,7 @@
 import React from 'react';
 import NavigationLink from './navigation-link';
 import './styles.scss';
-import SubMenu from '../sub-menu';
+import SubMenu from './sub-menu';
 import routes from '../../core/constants/route-paths';
 
 const Navigation = () => {
@@ -38,12 +38,20 @@ const Navigation = () => {
 		name: 'Event loop'
 	}];
 
+	const js = [{
+		route: routes.JAVASCRIPT.PROMISES,
+		name: 'Promises'
+	}];
+
 	return (
 		<nav>
 			<ul className='nav'>
 				<NavigationLink text='OOP principles' to={routes.OOP_PRINCIPLES}/>
-				<NavigationLink text='Javascript' to={routes.JAVASCRIPT}/>
 				<NavigationLink text='SOLID' to={routes.SOLID}/>
+				<SubMenu
+					title='Js'
+					subList={js}
+				/>
 				<SubMenu
 					title='Architecture'
 					subList={architecture}

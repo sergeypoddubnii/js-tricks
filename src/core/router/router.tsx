@@ -1,7 +1,6 @@
 import React from 'react';
 import routePaths from '../constants/route-paths';
 import {useRoutes} from 'react-router-dom';
-import Javascript from '../../Pages/javascript';
 
 const OopPrinciples = React.lazy(() => import('Pages/oop-principles'));
 const Flux = React.lazy(() => import('Pages/architectures/flux'));
@@ -13,6 +12,7 @@ const HelperFunctions = React.lazy(() => import('Pages/custom-realization/helper
 const LoadingPageProcess = React.lazy(() => import('Pages/web-staff/loading-page-process'));
 const EventLoop = React.lazy(() => import('Pages/web-staff/event-loop'));
 const Solid = React.lazy(() => import('Pages/solid'));
+const Promises = React.lazy(() => import('Pages/javascript/promises'));
 
 const routes = [
 	{
@@ -56,8 +56,8 @@ const routes = [
 		element: <Solid />,
 	},
 	{
-		path: routePaths.JAVASCRIPT,
-		element: <Javascript />,
+		path: routePaths.JAVASCRIPT.PROMISES,
+		element: <Promises />,
 	},
 ];
 
