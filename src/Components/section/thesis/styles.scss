@@ -1,0 +1,12 @@
+@import "src/assets/variables";
+
+.thesis {
+	display: flex;
+	margin:  0 0 10px 10px;
+	border-bottom: 1px dotted $middle-grey;
+
+	&__icon {
+		font-size: 1em;
+		margin-right: 5px;
+	}
+}
