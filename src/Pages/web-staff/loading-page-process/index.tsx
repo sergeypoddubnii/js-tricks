@@ -1,10 +1,10 @@
 import React from 'react';
 import Card from 'Components/containers/card';
-import InfoLinks from 'Components/link/info-links';
+import ReferenceList from 'Components/reference/reference-list';
 import {useAppSelector} from 'store/hooks';
 import {selectLoadingPageProcessSlice} from './loadingPageProcessSlice';
 import img from 'assets/images/load-page-process.png';
-import InfoLink from '../../../Components/link/info-link';
+import InfoLink from '../../../Components/reference';
 
 const LoadingPageProcess = () => {
 	const loadingPageProcess = useAppSelector(selectLoadingPageProcessSlice);
@@ -40,7 +40,7 @@ const LoadingPageProcess = () => {
 			<p>..........add INFO</p>
 			<h4>6. The server sends out an HTTP response.</h4>
 			<p>..........add INFO</p>
-			<InfoLinks links={loadingPageProcess.links}/>
+			<ReferenceList references={loadingPageProcess.links}/>
 		</Card>
 	);
 };

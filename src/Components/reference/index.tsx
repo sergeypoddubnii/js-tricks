@@ -6,7 +6,7 @@ export interface IProps {
 	text?: string;
 }
 
-const InfoLink:FC<IProps> = ({path, text}:IProps) => {
+const Reference:FC<IProps> = ({path, text}:IProps) => {
 	const cutString = (string:string, length:number):string => `${string.slice(0, length)}...`;
 	return (
 		<a
@@ -20,4 +20,4 @@ const InfoLink:FC<IProps> = ({path, text}:IProps) => {
 	);
 };
 
-export default memo(InfoLink);
+export default memo(Reference);

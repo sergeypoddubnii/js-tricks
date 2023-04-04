@@ -1,13 +1,13 @@
 import React from 'react';
-import InfoLink from './index';
+import Reference from './index';
 import { ComponentStory, ComponentMeta } from '@storybook/react';
 
 export default {
 	title: 'InfoLink',
-	component: InfoLink,
-} as ComponentMeta<typeof InfoLink>;
+	component: Reference,
+} as ComponentMeta<typeof Reference>;
 
-const Template: ComponentStory<typeof InfoLink> = (arg) => <InfoLink {...arg}/>;
+const Template: ComponentStory<typeof Reference> = (arg) => <Reference {...arg}/>;
 
 export const Link = () => Template.bind({});
 
