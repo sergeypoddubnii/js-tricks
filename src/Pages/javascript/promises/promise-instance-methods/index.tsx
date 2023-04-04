@@ -20,8 +20,12 @@ const PromiseInstanceMethods = () => {
 			</Thesis>
 			<CodeSyntax code={code.catch}/>
 			<Thesis title={'Promise.prototype.finally'}>
-				<p>hello</p>
+				<Definition>.finally(onFinally)</Definition> appends a handler to the promise, and returns a new promise that is resolved when the original promise is resolved. The handler is called when the promise is settled, whether fulfilled or rejected.
 			</Thesis>
+			<Thesis>
+				<Definition>onFinally</Definition>A function to asynchronously execute when this promise becomes settled. Its return value is ignored unless the returned value is a rejected promise. The function is called with no arguments.
+			</Thesis>
+			<CodeSyntax code={code.finally} />
 		</Section>
 	);
 };

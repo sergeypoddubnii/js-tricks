@@ -5,14 +5,29 @@ import HashMenu from 'Components/navigation-hash/hash-menu';
 import PromiseDescription from './promise-description';
 import PromiseInstanceMethods from './promise-instance-methods';
 
+const hashMenu = [
+	{
+		to: 'description',
+		text: 'Description'
+	},
+	{
+		to: 'instance-methods',
+		text: 'Instance Methods'
+	},
+	{
+		to: 'static-methods',
+		text: 'Static Methods'
+	},
+];
+
 const Promises = () => {
 	return (
 		<PageLayout>
 			<Card title={'Promises'}>
 				<PromiseDescription />
 				<PromiseInstanceMethods />
-				<HashMenu menu={[]} />
 			</Card>
+			<HashMenu menu={hashMenu} />
 		</PageLayout>
 	);
 };
