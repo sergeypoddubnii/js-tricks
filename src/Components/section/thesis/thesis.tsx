@@ -3,16 +3,20 @@ import './styles.scss';
 
 interface IProps {
 	children: React.ReactNode;
+	title?: string;
 }
 
-const Thesis:FC<IProps> = ({children}:IProps) => {
+const Thesis:FC<IProps> = ({children, title}:IProps) => {
 	return (
-		<div className='thesis'>
-			<span className='thesis__icon'>&#x2022;</span>
-			<div>
-				{children}
+		<>
+			<h6>{title}</h6>
+			<div className='thesis'>
+				<span className='thesis__icon'>&#x2022;</span>
+				<div>
+					{children}
+				</div>
 			</div>
-		</div>
+		</>
 	);
 };
 
