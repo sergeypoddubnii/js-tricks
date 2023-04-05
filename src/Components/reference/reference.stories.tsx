@@ -3,7 +3,7 @@ import Reference from './index';
 import { ComponentStory, ComponentMeta } from '@storybook/react';
 
 export default {
-	title: 'InfoLink',
+	title: 'Reference',
 	component: Reference,
 } as ComponentMeta<typeof Reference>;
 

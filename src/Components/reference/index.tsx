@@ -7,13 +7,20 @@ export interface IProps {
 }
 
 const Reference:FC<IProps> = ({path, text}:IProps) => {
-	const cutString = (string:string, length:number):string => `${string.slice(0, length)}...`;
+	const cutString = (string:string, length:number):string => {
+		if(string.length <= length) {
+			return string;
+		}
+
+		return `${string.slice(0, length)}...`;
+	};
+
 	return (
 		<a
 			href={path}
 			target='_blank'
 			rel="noreferrer"
-			className='infoLink'
+			className='reference'
 		>
 			[ ]{' '}{text ? text : cutString(path, 70)}{' '}
 		</a>

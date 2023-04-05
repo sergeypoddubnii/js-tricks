@@ -1,8 +1,8 @@
 import React from 'react';
 import NavigationLink from './navigation-link';
-import './styles.scss';
 import SubMenu from './sub-menu';
 import routes from '../../core/constants/route-paths';
+import './styles.scss';
 
 const Navigation = () => {
 

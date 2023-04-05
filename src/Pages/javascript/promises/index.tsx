@@ -5,6 +5,7 @@ import HashMenu from 'Components/navigation-hash/hash-menu';
 import PromiseDescription from './promise-description';
 import PromiseInstanceMethods from './promise-instance-methods';
 import ReferenceList from 'Components/reference/reference-list';
+import PromiseStaticMethods from './promise-static-methods';
 
 const hashMenu = [
 	{
@@ -32,6 +33,7 @@ const Promises = () => {
 			<Card title={'Promises'}>
 				<PromiseDescription />
 				<PromiseInstanceMethods />
+				<PromiseStaticMethods />
 				<ReferenceList references={references}/>
 			</Card>
 			<HashMenu menu={hashMenu} />
