@@ -2,10 +2,12 @@ import React, {FC} from 'react';
 import Definition from 'Components/section/definition';
 import Thesis from 'Components/section/thesis/thesis';
 import CodeSyntax from 'Components/code-syntax';
-import code from '../code.json';
 import Section from 'Components/section';
+import {useAppSelector} from 'store/hooks';
+import {selectPromise} from '../promiseSlice';
 
 const PromiseDescription:FC = () => {
+	const {snippets} = useAppSelector(selectPromise);
 	return (
 		<Section title='Promise Description'>
 			<p>
@@ -36,7 +38,7 @@ const PromiseDescription:FC = () => {
 				The executor should call only one resolve or one reject. Any state change is final.
 				All further calls of resolve and reject are ignored
 			</Thesis>
-			<CodeSyntax code={code.createPromise} />
+			<CodeSyntax code={snippets.description} />
 		</Section>
 	);
 };

@@ -6,6 +6,8 @@ import PromiseDescription from './promise-description';
 import PromiseInstanceMethods from './promise-instance-methods';
 import ReferenceList from 'Components/reference/reference-list';
 import PromiseStaticMethods from './promise-static-methods';
+import {useAppSelector} from 'store/hooks';
+import {selectPromise} from './promiseSlice';
 
 const hashMenu = [
 	{
@@ -22,12 +24,9 @@ const hashMenu = [
 	},
 ];
 
-const references = [
-	'https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise',
-	'https://javascript.info/promise-basics',
-];
-
 const Promises = () => {
+	const {references} = useAppSelector(selectPromise);
+
 	return (
 		<PageLayout>
 			<Card title={'Promises'}>
