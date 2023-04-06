@@ -13,6 +13,7 @@ const LoadingPageProcess = React.lazy(() => import('Pages/web-staff/loading-page
 const EventLoop = React.lazy(() => import('Pages/web-staff/event-loop'));
 const Solid = React.lazy(() => import('Pages/solid'));
 const Promises = React.lazy(() => import('Pages/javascript/promises'));
+const Iterator = React.lazy(() => import('Pages/javascript/iterator'));
 
 const routes = [
 	{
@@ -59,6 +60,11 @@ const routes = [
 		path: routePaths.JAVASCRIPT.PROMISES,
 		element: <Promises />,
 	},
+	{
+		path: routePaths.JAVASCRIPT.ITERATOR,
+		element: <Iterator />,
+	},
+
 ];
 
 const Router = () => {

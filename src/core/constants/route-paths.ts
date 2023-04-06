@@ -1,7 +1,8 @@
 const routePaths = {
 	OOP_PRINCIPLES: '/OOP-principles',
 	JAVASCRIPT: {
-		PROMISES: '/js/promises'
+		PROMISES: '/js/promises',
+		ITERATOR: '/js/iterator',
 	},
 	DESIGN_PATTERNS: {
 		FACTORY: '/design-patterns/factory',

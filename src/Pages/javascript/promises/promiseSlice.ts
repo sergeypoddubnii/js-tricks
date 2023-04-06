@@ -1,9 +1,13 @@
 import { createSlice } from '@reduxjs/toolkit';
 import type { RootState } from 'store/store';
 
+interface ISnippets {
+	[key :string]: string
+}
+
 interface IState {
 	references: string[];
-	snippets: {[key :string]: string}
+	snippets: ISnippets;
 }
 
 const initialState: IState = {

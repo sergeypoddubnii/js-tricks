@@ -31,6 +31,6 @@
   },
   "include": [
     "src",
-  	"styles.d.ts"
+    "src/types/styles.d.ts"
   ]
 }
