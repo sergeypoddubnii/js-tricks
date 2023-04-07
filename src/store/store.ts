@@ -3,6 +3,7 @@ import arrayMethodsSlice from 'Pages/custom-realization/array-methods/arrayMetho
 import loadingPageProcess from 'Pages/web-staff/loading-page-process/loadingPageProcessSlice';
 import eventLoopSlice from 'Pages/web-staff/event-loop/eventLoopSlice';
 import promiseSlice from 'Pages/javascript/promises/promiseSlice';
+import iteratorSlice from 'Pages/javascript/iterator/iteratorSlice';
 
 export const store = configureStore({
 	reducer: {
@@ -10,6 +11,7 @@ export const store = configureStore({
 		loadingPageProcess: loadingPageProcess,
 		eventLoop: eventLoopSlice,
 		promise: promiseSlice,
+		iterator: iteratorSlice
 	},
 });
 

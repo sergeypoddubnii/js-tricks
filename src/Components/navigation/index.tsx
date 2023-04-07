@@ -40,8 +40,13 @@ const Navigation = () => {
 
 	const js = [{
 		route: routes.JAVASCRIPT.PROMISES,
-		name: 'Promises'
-	}];
+		name: 'Promises',
+	},
+	{
+		route: routes.JAVASCRIPT.ITERATOR,
+		name: 'Iterator',
+	}
+	];
 
 	return (
 		<nav>
