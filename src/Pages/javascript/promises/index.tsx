@@ -1,7 +1,5 @@
 import React from 'react';
 import PageLayout from 'core/layout/page-layout';
-import Card from 'Components/containers/card';
-import HashMenu from 'Components/navigation-hash/hash-menu';
 import PromiseDescription from './promise-description';
 import PromiseInstanceMethods from './promise-instance-methods';
 import ReferenceList from 'Components/reference/reference-list';
@@ -28,14 +26,14 @@ const Promises = () => {
 	const {references} = useAppSelector(selectPromise);
 
 	return (
-		<PageLayout>
-			<Card title={'Promises'}>
-				<PromiseDescription />
-				<PromiseInstanceMethods />
-				<PromiseStaticMethods />
-				<ReferenceList references={references}/>
-			</Card>
-			<HashMenu menu={hashMenu} />
+		<PageLayout
+			title={'Promises'}
+			menu={hashMenu}
+		>
+			<PromiseDescription />
+			<PromiseInstanceMethods />
+			<PromiseStaticMethods />
+			<ReferenceList references={references}/>
 		</PageLayout>
 	);
 };
