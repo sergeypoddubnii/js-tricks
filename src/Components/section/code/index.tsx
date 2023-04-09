@@ -6,11 +6,11 @@ interface IProps {
 	className?: string;
 }
 
-const Definition:FC<IProps> = ({children, className}:IProps) => {
+const Code:FC<IProps> = ({children, className}:IProps) => {
 	const styles = className ? `section__definition ${className}` : 'section__definition';
 	return (
 		<span className={styles}>{children}</span>
 	);
 };
 
-export default Definition;
+export default Code;
