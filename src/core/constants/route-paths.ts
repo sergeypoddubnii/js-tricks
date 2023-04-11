@@ -4,10 +4,7 @@ const routePaths = {
 		PROMISES: '/js/promises',
 		ITERATOR: '/js/iterator',
 	},
-	DESIGN_PATTERNS: {
-		FACTORY: '/design-patterns/factory',
-		MODULE: '/design-patterns/module-pattern'
-	},
+	DESIGN_PATTERNS: '/design-patterns',
 	SOLID: '/solid',
 	ARCHITECTURE: {
 		FLUX: '/architecture/flux',

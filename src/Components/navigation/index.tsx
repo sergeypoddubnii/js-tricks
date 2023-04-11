@@ -53,6 +53,7 @@ const Navigation = () => {
 			<ul className='nav'>
 				<NavigationLink text='OOP principles' to={routes.OOP_PRINCIPLES}/>
 				<NavigationLink text='SOLID' to={routes.SOLID}/>
+				<NavigationLink text={'Design Patterns'} to={routes.DESIGN_PATTERNS} />
 				<SubMenu
 					title='Js'
 					subList={js}

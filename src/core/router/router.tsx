@@ -14,6 +14,7 @@ const EventLoop = React.lazy(() => import('Pages/web-staff/event-loop'));
 const Solid = React.lazy(() => import('Pages/solid'));
 const Promises = React.lazy(() => import('Pages/javascript/promises'));
 const Iterator = React.lazy(() => import('Pages/javascript/iterator'));
+const DesignPatterns = React.lazy(() => import('Pages/design-patterns'));
 
 const routes = [
 	{
@@ -63,6 +64,10 @@ const routes = [
 	{
 		path: routePaths.JAVASCRIPT.ITERATOR,
 		element: <Iterator />,
+	},
+	{
+		path: routePaths.DESIGN_PATTERNS,
+		element: <DesignPatterns />,
 	},
 
 ];
