@@ -1,5 +1,6 @@
 const routePaths = {
 	OOP_PRINCIPLES: '/OOP-principles',
+	DATA_STRUCTURES: '/data-structures',
 	JAVASCRIPT: {
 		PROMISES: '/js/promises',
 		ITERATOR: '/js/iterator',

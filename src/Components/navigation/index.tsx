@@ -54,6 +54,7 @@ const Navigation = () => {
 				<NavigationLink text='OOP principles' to={routes.OOP_PRINCIPLES}/>
 				<NavigationLink text='SOLID' to={routes.SOLID}/>
 				<NavigationLink text={'Design Patterns'} to={routes.DESIGN_PATTERNS} />
+				<NavigationLink text={'Data Structures'} to={routes.DATA_STRUCTURES} />
 				<SubMenu
 					title='Js'
 					subList={js}
