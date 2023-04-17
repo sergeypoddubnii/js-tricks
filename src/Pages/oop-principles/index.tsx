@@ -1,9 +1,9 @@
 import React, {FC} from 'react';
-import Card from 'Components/containers/card';
+import PageLayout from 'core/layout/page-layout';
 
 const OopPrinciples:FC = () => {
 	return (
-		<Card title='OOP Principles'>
+		<PageLayout title='OOP Principles'>
 			<h6>Encapsulation</h6>
 			<p>
 				Even if we have no idea what encapsulation is, we can guess just by the word that we are “enclosing” or hiding something, that’s exactly what is! With encapsulation, object’s methods and properties are enclosed within the object, so there are not exposed.
@@ -20,7 +20,7 @@ const OopPrinciples:FC = () => {
 			<p>
 				In this instance, polymorphism means the same method can be used on different objects. For example , if a Car and a Motocycle have the same function — drive, polymorphism gives us an ability to call the same method on different objects.
 			</p>
-		</Card>
+		</PageLayout>
 	);
 };
 
