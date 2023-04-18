@@ -5,7 +5,7 @@ import BinaryTree from './binary-tree';
 const DataStructures = () => {
 	return (
 		<PageLayout title={'Data Structures'}>
-			<BinaryTree/>
+			<BinaryTree />
 		</PageLayout>
 	);
 };
