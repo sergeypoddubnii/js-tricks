@@ -16,6 +16,7 @@ const Promises = React.lazy(() => import('Pages/javascript/promises'));
 const Iterator = React.lazy(() => import('Pages/javascript/iterator'));
 const DesignPatterns = React.lazy(() => import('Pages/design-patterns'));
 const DataStructures = React.lazy(() => import('Pages/data-structures'));
+const Libraries = React.lazy(() => import('Pages/libraries'));
 
 const routes = [
 	{
@@ -73,6 +74,10 @@ const routes = [
 	{
 		path: routePaths.DATA_STRUCTURES,
 		element: <DataStructures />,
+	},
+	{
+		path: routePaths.LIBRARIES,
+		element: <Libraries />,
 	},
 
 ];
