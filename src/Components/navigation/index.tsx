@@ -36,6 +36,10 @@ const Navigation = () => {
 	{
 		route: routes.WEB_STAFF.EVENT_LOOP,
 		name: 'Event loop'
+	},
+	{
+		route: routes.WEB_STAFF.JWT_TOKEN,
+		name: 'JWT Token'
 	}];
 
 	const js = [{

@@ -17,6 +17,7 @@ const Iterator = React.lazy(() => import('Pages/javascript/iterator'));
 const DesignPatterns = React.lazy(() => import('Pages/design-patterns'));
 const DataStructures = React.lazy(() => import('Pages/data-structures'));
 const Libraries = React.lazy(() => import('Pages/libraries'));
+const JWTToken = React.lazy(() => import('Pages/web-staff/jwt-token'));
 
 const routes = [
 	{
@@ -79,7 +80,10 @@ const routes = [
 		path: routePaths.LIBRARIES,
 		element: <Libraries />,
 	},
-
+	{
+		path: routePaths.WEB_STAFF.JWT_TOKEN,
+		element: <JWTToken />,
+	},
 ];
 
 const Router = () => {

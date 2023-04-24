@@ -21,6 +21,7 @@ const routePaths = {
 	WEB_STAFF: {
 		LOADING_PAGE_PROCESS: '/web-staff/loading-page-process',
 		EVENT_LOOP: '/web-staff/event-loop',
+		JWT_TOKEN: '/web-staff/jwt-token',
 	}
 };
 
