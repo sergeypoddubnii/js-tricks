@@ -1,6 +1,7 @@
 const routePaths = {
 	OOP_PRINCIPLES: '/OOP-principles',
 	DATA_STRUCTURES: '/data-structures',
+	REACT_DOCS:'/react-docs',
 	LIBRARIES: '/libraries',
 	JAVASCRIPT: {
 		PROMISES: '/js/promises',

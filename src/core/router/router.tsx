@@ -18,6 +18,7 @@ const DesignPatterns = React.lazy(() => import('Pages/design-patterns'));
 const DataStructures = React.lazy(() => import('Pages/data-structures'));
 const Libraries = React.lazy(() => import('Pages/libraries'));
 const JWTToken = React.lazy(() => import('Pages/web-staff/jwt-token'));
+const ReactDocs = React.lazy(() => import('Pages/react-docs'));
 
 const routes = [
 	{
@@ -83,6 +84,10 @@ const routes = [
 	{
 		path: routePaths.WEB_STAFF.JWT_TOKEN,
 		element: <JWTToken />,
+	},
+	{
+		path: routePaths.REACT_DOCS,
+		element: <ReactDocs />,
 	},
 ];
 
