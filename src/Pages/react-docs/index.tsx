@@ -1,10 +1,13 @@
 import React from 'react';
 import PageLayout from 'core/layout/page-layout';
+import ReferenceList from 'Components/reference/reference-list';
+
+const references = ['https://react.dev/'];
 
 const ReactDocs = () => {
 	return (
 		<PageLayout title={'React Documentation'}>
-			<p>react docs</p>
+			<ReferenceList references={references}/>
 		</PageLayout>
 	);
 };
