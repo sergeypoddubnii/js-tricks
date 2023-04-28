@@ -23,7 +23,7 @@ const UseReducerHook = () => {
 				<Code>state</Code> it is value of state
 			</Thesis>
 			<Thesis>
-				<Code>dispatch</Code>it is function send action to <Code>reducer</Code>
+				<Code>dispatch</Code> it is function send action to <Code>reducer</Code>
 				and call rerender component
 			</Thesis>
 			<CodeSyntax code={'import \"./styles.css\";\nimport { useReducer } from \"react\";\n// reducer\nfunction reducer(state, action) {\n  switch (action.type) {\n    case \"increase\":\n      return { ...state, count: state.count + 1 };\n    case \"reduce\":\n      return { ...state, count: state.count - 1 };\n    default:\n      return state;\n  }\n}\n\nexport default function App() {\n  // initialState first value\n  const initialArgs = 33;\n  // init function not required return state\n  // takes as argument initialArgs\n  const initFunc = (count) => {\n    return { count: count };\n  };\n\n  const [state, dispatch] = useReducer(reducer, initialArgs, initFunc);\n\n  const actionIncrease = { type: \"increase\" };\n  const actionReduce = { type: \"reduce\" };\n\n  const handleIncrease = () => {\n    // dispatch call rerender\n    dispatch(actionIncrease);\n  };\n\n  const handleReduce = () => {\n    // dispatch call rerender\n    dispatch(actionReduce);\n  };\n\n  return (\n    <div className=\"App\">\n      <button onClick={handleIncrease}>increase+</button>\n      <button onClick={handleReduce}>reduce-</button>\n      <p>{state.count}</p>\n    </div>\n  );\n}\n'}/>
