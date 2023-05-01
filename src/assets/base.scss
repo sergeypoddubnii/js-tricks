@@ -1,5 +1,5 @@
-@import 'fonts.scss';
-@import 'variables';
+@use 'variables';
+@import 'fonts';
 
 body {
 	font-family: 'Roboto', sans-serif;
