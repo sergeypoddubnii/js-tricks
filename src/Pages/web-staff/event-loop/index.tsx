@@ -4,7 +4,7 @@ import Card from 'Components/containers/card';
 const EventLoop = () => {
 	return (
 		<Card title={'Event loop'}>
-			<div>event loop</div>
+			<p>event loop</p>
 		</Card>
 	);
 };
